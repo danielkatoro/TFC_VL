@@ -1,11 +1,13 @@
 <?php
 
 use Illuminate\Http\Request;
+use MercurySeries\Flashy\Flashy;
 use App\Mail\ContactMessageCreated;
 use Illuminate\Support\Facades\Mail;
 use App\Http\Requests\ContactRequest;
-use Illuminate\Support\Facades\Route;
 
+use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Redirect;
 use function PHPUnit\Framework\returnSelf;
 
 /*
@@ -46,7 +48,8 @@ Route::name('consultation')->get('consultation', function(){
 Route::name('consultation_path')->post('consultation', function (ContactRequest $_request){
     $mailable =new ContactMessageCreated($_request->name,$_request->email,$_request->message);
     Mail::to('danielkatoro@gmail.com')->send($mailable);
-    flashy('You have been logged out.');
+    Flashy::message('Nous vous repondrons dans le plus bref delais!', 'http://your-awesome-link.com');
+    return Redirect::route('home');
 });
 
 Route::name('test-email')->get('test-email', function(){
