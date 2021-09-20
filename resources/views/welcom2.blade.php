@@ -891,6 +891,6 @@
             <script src="./deskapp/src/plugins/jquery-steps/jquery.steps.js"></script>
             <script src="./deskapp/vendors/scripts/steps-setting.js"></script>
         <!-- desskapp end -->            <!-- Footer End -->
-            
+        @include('flashy::message')
     </body>
 </html>
