@@ -2,11 +2,11 @@
 # Hey Admin
 
 The body of your message.
-- {{$name}}
-- {{$email}}
+- {{$msg->name}}
+- {{$msg->email}}
 
 @component('mail::panel')
- {{$msg}}
+ {{$msg->message}}
 @endcomponent
 
 

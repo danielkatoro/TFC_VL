@@ -1,11 +1,11 @@
 <?php
 
 use Illuminate\Http\Request;
+use App\Models\MessageContact;
 use MercurySeries\Flashy\Flashy;
 use App\Mail\ContactMessageCreated;
 use Illuminate\Support\Facades\Mail;
 use App\Http\Requests\ContactRequest;
-
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Redirect;
 use function PHPUnit\Framework\returnSelf;
@@ -46,15 +46,21 @@ Route::name('consultation')->get('consultation', function(){
 });
 
 Route::name('consultation_path')->post('consultation', function (ContactRequest $_request){
-    $mailable =new ContactMessageCreated($_request->name,$_request->email,$_request->message);
-    Mail::to(config('cabinetVL.admin_support_email'))->send($mailable);
-    Flashy::message('Nous vous repondrons dans le plus bref delais!', 'http://your-awesome-link.com');
+    $message = MessageContact::create($_request->only('name','email','message'));
+    $message->name=$_request->name; 
+    $message->email=$_request->email;
+    $message->message=$_request->message;
+    $message->save();
+    
+    Mail::to(config('cabinetVL.admin_support_email'))
+    ->send(new ContactMessageCreated($message));
+    Flashy('Nous vous repondrons dans le plus bref delais!');
     return Redirect::route('home');
 });
 
-Route::name('test-email')->get('test-email', function(){
-    return new ContactMessageCreated('Daniel Katoro','danielkatoro@gmail.com','Merci beacoup');
-});
+// Route::name('test-email')->get('test-email', function(){
+//     return new ContactMessageCreated('Daniel Katoro','danielkatoro@gmail.com','Merci beacoup');
+// });
 // Route::post('consultation', [
 //     'as'=>'consultation_path',
 //     'users'=>'PagesController.store'
