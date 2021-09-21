@@ -47,7 +47,7 @@ Route::name('consultation')->get('consultation', function(){
 
 Route::name('consultation_path')->post('consultation', function (ContactRequest $_request){
     $mailable =new ContactMessageCreated($_request->name,$_request->email,$_request->message);
-    Mail::to('danielkatoro@gmail.com')->send($mailable);
+    Mail::to(config('cabinetVL.admin_support_email'))->send($mailable);
     Flashy::message('Nous vous repondrons dans le plus bref delais!', 'http://your-awesome-link.com');
     return Redirect::route('home');
 });
