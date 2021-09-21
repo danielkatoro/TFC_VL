@@ -874,6 +874,7 @@
 
         <!-- JavaScript Libraries -->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        @include('flashy::message')
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
         <script src="{{ asset('landing/lib/easing/easing.min.js') }}"></script>
         <script src="{{ asset('landing/lib/owlcarousel/owl.carousel.min.js') }}"></script>
@@ -891,6 +892,6 @@
             <script src="./deskapp/src/plugins/jquery-steps/jquery.steps.js"></script>
             <script src="./deskapp/vendors/scripts/steps-setting.js"></script>
         <!-- desskapp end -->            <!-- Footer End -->
-        @include('flashy::message')
+        
     </body>
 </html>
