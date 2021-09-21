@@ -1,11 +1,11 @@
 <?php
 
 use Illuminate\Http\Request;
-use App\Models\MessageContact;
 use MercurySeries\Flashy\Flashy;
 use App\Mail\ContactMessageCreated;
 use Illuminate\Support\Facades\Mail;
 use App\Http\Requests\ContactRequest;
+use App\Models\Models\MessageContact;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Redirect;
 use function PHPUnit\Framework\returnSelf;
@@ -46,14 +46,13 @@ Route::name('consultation')->get('consultation', function(){
 });
 
 Route::name('consultation_path')->post('consultation', function (ContactRequest $_request){
-    $message = MessageContact::create($_request->only('name','email','message'));
+    $message = new MessageContact;
     $message->name=$_request->name; 
     $message->email=$_request->email;
     $message->message=$_request->message;
     $message->save();
-    
-    Mail::to(config('cabinetVL.admin_support_email'))
-    ->send(new ContactMessageCreated($message));
+    $mailable =new ContactMessageCreated($message);
+    Mail::to(config('cabinetVL.admin_support_email'))->send($mailable);
     Flashy('Nous vous repondrons dans le plus bref delais!');
     return Redirect::route('home');
 });
