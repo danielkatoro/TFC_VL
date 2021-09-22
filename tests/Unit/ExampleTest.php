@@ -11,7 +11,7 @@ class ExampleTest extends TestCase
      *
      * @return void
      */
-    public function test_example()
+    public function test_everythings_work_perfecty()
     {
         $this->assertTrue(true);
     }
