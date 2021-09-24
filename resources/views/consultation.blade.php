@@ -131,24 +131,24 @@
                                     <i class="fa fa-map-marker-alt"></i>
                                     <div class="contact-text">
                                         <label for="name">Nom</label>
-                                        <input value="{{ old('name') }}" type="text" name="name" id="name" class="form-control " placeholder="daniel katoro" required="required" />                                    
-                                        {!! $errors->first('name','<span class="help-block">:message</span>') !!}
+                                        <input value="{{ old('name') }}" type="text" name="name" id="name" class="form-control {{ $errors->has('name') ? 'is-invalid' : '' }} " placeholder="daniel katoro" required="required" />                                    
+                                        {!! $errors->first('name','<span class="invalid-feedback">:message</span>') !!}
                                     </div>
                                 </div>
                                 <div class="contact-item">
                                     <i class="fa fa-map-marker-alt"></i>
                                     <div class="contact-text">
                                         <label for="email">E-mail</label>
-                                        <input value="{{ old('email') }}" type="email" name="email" id="email" class="form-control " placeholder="daniel@exemple.com" required="required" />                                    
-                                        {!! $errors->first('email','<span class="help-block">:message</span>') !!}
+                                        <input value="{{ old('email') }}" type="email" name="email" id="email" class="form-control {{ $errors->has('email') ? 'is-invalid' : '' }} " placeholder="daniel@exemple.com" required="required" />                                    
+                                        {!! $errors->first('email','<span class="invalid-feedback">:message</span>') !!}
                                     </div>
                                 </div> 
                                 <div class="contact-item">
                                     <i class="fa fa-map-marker-alt"></i>
                                     <div class="contact-text">
                                         <label for="message">N'ésitez à poser une question ou simplement exposer votre affaire</label>
-                                        <textarea id="message" name="message" placeholder="Message" class="form-control" required="required id="message" cols="30" rows="10">{{ old('message') }}</textarea>
-                                        {!! $errors->first('name','<span class="help-block">:message</span>') !!}
+                                        <textarea id="message" name="message" placeholder="Message" class="form-control {{ $errors->has('message') ? 'is-invalid' : '' }}" required="required id="message" cols="30" rows="10">{{ old('message') }}</textarea>
+                                        {!! $errors->first('name','<span class="invalid-feedback">:message</span>') !!}
                                     </div> 
                                 </div>
                                 <div>
