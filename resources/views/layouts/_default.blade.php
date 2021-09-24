@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ app()->getLocale() }}">
   
 <!-- Mirrored from htmlstream.com/front-dashboard/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 29 Sep 2020 14:46:11 GMT -->
 <head>
