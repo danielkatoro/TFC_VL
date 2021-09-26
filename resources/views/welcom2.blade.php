@@ -104,8 +104,10 @@
                                 <a href="contact.php" class="nav-item nav-link">Contacter</a>
                             </div>
                             <div class="ml-auto">
+                                @guest
                                 <a class="btn" href="{{Route('login')}}">Connexion</a>
                                 <a class="btn" href="{{ Route('register') }}">Inscription</a>
+                                @endguest
                             </div>
                         </div>
                     </nav>
