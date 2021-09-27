@@ -1,19 +1,21 @@
 @component('mail::message')
-# Hey Admin
+# Bonjour cher Admin
 
-The body of your message.
-- {{$msg->name}}
-- {{$msg->email}}
+Il y a une nouvelle requette soumise au Cabinet Kalinda & Associé dans la plateforme virtuelle.
+<br>
+Venant de <strong> {{$msg->name}}</strong> <br>
+Ayant comme adresse mail <strong>{{$msg->email}}</strong>
 
+Contenu du Message :
 @component('mail::panel')
  {{$msg->message}}
 @endcomponent
 
 
-@component('mail::button', ['url' => ''])
-Créer un compte
+@component('mail::button', ['url' => '{{route("register") }}'])
+Créer un compte pour {{$msg->name}}
 @endcomponent
 
-Thanks,<br>
+Merci,<br>
 {{ config('app.name') }}
 @endcomponent
