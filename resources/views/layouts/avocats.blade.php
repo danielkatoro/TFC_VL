@@ -1016,7 +1016,7 @@
                   <td class="table-column-pl-0">
                     <a class="d-flex align-items-center" href="user-profile.php">
                       <div class="avatar avatar-circle">
-                        <img class="avatar-img" src="assets/img/160x160/img6.jpg" alt="Image Description">
+                        <img class="avatar-img" src="assets/img/160x160/img00.jpg" alt="Image Description">
                       </div>
                       <div class="ml-3">
                         <span class="d-block h5 text-hover-primary mb-0">Costa Quinn</span>
@@ -1436,7 +1436,7 @@
                   <td class="table-column-pl-0">
                     <a class="d-flex align-items-center" href="user-profile.php">
                       <div class="avatar avatar-circle">
-                        <img class="avatar-img" src="assets/img/160x160/img6.jpg" alt="Image Description">
+                        <img class="avatar-img" src="assets/img/160x160/img00.jpg" alt="Image Description">
                       </div>
                       <div class="ml-3">
                         <span class="d-block h5 text-hover-primary mb-0">Mark Williams <i class="tio-verified text-primary" data-toggle="tooltip" data-placement="top" title="Top endorsed"></i></span>

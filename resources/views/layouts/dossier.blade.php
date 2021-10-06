@@ -59,18 +59,18 @@
               <nav aria-label="breadcrumb">
                 <ol class="breadcrumb breadcrumb-no-gutter">
                   <li class="breadcrumb-item"><a class="breadcrumb-link" href="javascript:;">Pages</a></li>
-                  <li class="breadcrumb-item"><a class="breadcrumb-link" href="javascript:;">Projects</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Overview</li>
+                  <li class="breadcrumb-item"><a class="breadcrumb-link" href="javascript:;">Dossier</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Aperçu</li>
                 </ol>
               </nav>
 
-              <h1 class="page-header-title">Overview</h1>
+              <h1 class="page-header-title">Aperçu</h1>
             </div>
 
             <div class="col-sm-auto">
-              <div id="newProjectPopover" data-toggle="popover" data-placement="left" title="<div class='d-flex align-items-center'>New project <a href='#!' class='text-white ml-auto'><i id='closeNewProjectPopover' class='tio-clear'></i></a></div>" data-content="Check out this New project modal example." data-html="true">
+              <div id="newProjectPopover" data-toggle="popover" data-placement="left" title="<div class='d-flex align-items-center'>Nouveau Dossier <a href='#!' class='text-white ml-auto'><i id='closeNewProjectPopover' class='tio-clear'></i></a></div>" data-content="Remplissez ce formulaire pour un nouveau " data-html="true">
                 <a class="btn btn-primary" href="javascript:;" data-toggle="modal" data-target="#newProjectModal">
-                  <i class="tio-add mr-1"></i> New project
+                  <i class="tio-add mr-1"></i> Nouveau Dossier
                 </a>
               </div>
             </div>
@@ -80,8 +80,8 @@
           <!-- Nav -->
           <ul class="nav nav-tabs page-header-tabs">
             <li class="nav-item">
-              <a class="nav-link active" href="projects.php">
-                Projects <span class="badge badge-soft-dark ml-1">24</span>
+              <a class="nav-link active" href="{{  route('dossier') }}">
+                Dossier <span class="badge badge-soft-dark ml-1">24</span>
               </a>
             </li>
             <li class="nav-item">
@@ -104,7 +104,7 @@
               <div class="media-body">
                 <div class="row mx-md-n3">
                   <div class="col-md px-md-4">
-                    <span class="d-block">Total projects</span>
+                    <span class="d-block">Total Dossier</span>
                     <span class="badge badge-soft-danger badge-pill p-1"><i class="tio-trending-down"></i> -2 late in due</span>
                   </div>
 
@@ -113,15 +113,15 @@
                     <div class="row justify-content-start mb-2">
                       <div class="col-auto">
                         <span class="legend-indicator bg-primary"></span>
-                        In progress (10)
+                        En cours (10)
                       </div>
                       <div class="col-auto">
                         <span class="legend-indicator bg-success"></span>
-                        Completed (8)
+                        Cloturés (8)
                       </div>
                       <div class="col-auto">
                         <span class="legend-indicator"></span>
-                        To do (6)
+                        A faire (6)
                       </div>
                     </div>
                     <!-- End Legend Indicators -->
@@ -188,25 +188,25 @@
                     <div id="usersExportDropdown" class="hs-unfold-content dropdown-unfold dropdown-menu dropdown-menu-sm-right">
                       <span class="dropdown-header">Options</span>
                       <a id="export-copy" class="dropdown-item" href="javascript:;">
-                        <img class="avatar avatar-xss avatar-4by3 mr-2" src="assets/svg/illustrations/copy.svg" alt="Image Description">
+                        <img class="avatar avatar-xss avatar-4by3 mr-2" src="{{ asset('svg/illustrations/copy.svg') }}" alt="Image Description">
                         Copy
                       </a>
                       <a id="export-print" class="dropdown-item" href="javascript:;">
-                        <img class="avatar avatar-xss avatar-4by3 mr-2" src="assets/svg/illustrations/print.svg" alt="Image Description">
+                        <img class="avatar avatar-xss avatar-4by3 mr-2" src="{{ asset('svg/illustrations/print.svg') }}" alt="Image Description">
                         Print
                       </a>
                       <div class="dropdown-divider"></div>
                       <span class="dropdown-header">Download options</span>
                       <a id="export-excel" class="dropdown-item" href="javascript:;">
-                        <img class="avatar avatar-xss avatar-4by3 mr-2" src="assets/svg/brands/excel.svg" alt="Image Description">
+                        <img class="avatar avatar-xss avatar-4by3 mr-2" src="{{ asset('svg/brands/excel.svg') }}" alt="Image Description">
                         Excel
                       </a>
                       <a id="export-csv" class="dropdown-item" href="javascript:;">
-                        <img class="avatar avatar-xss avatar-4by3 mr-2" src="assets/svg/components/placeholder-csv-format.svg" alt="Image Description">
+                        <img class="avatar avatar-xss avatar-4by3 mr-2" src="{{ asset('svg/components/placeholder-csv-format.svg') }}" alt="Image Description">
                         .CSV
                       </a>
                       <a id="export-pdf" class="dropdown-item" href="javascript:;">
-                        <img class="avatar avatar-xss avatar-4by3 mr-2" src="assets/svg/brands/pdf.svg" alt="Image Description">
+                        <img class="avatar avatar-xss avatar-4by3 mr-2" src="{{ asset('svg/brands/pdf.svg') }}" alt="Image Description">
                         PDF
                       </a>
                     </div>
@@ -313,11 +313,11 @@
                                           "placeholder": "Select a member"
                                         }'>
                                   <option label="empty"></option>
-                                  <option value="AH" selected data-option-template='<span class="d-flex align-items-center"><img class="avatar avatar-xss avatar-circle mr-2" src="assets/img/160x160/img10.jpg" alt="Image Description" /><span class="text-truncate">Amanda Harvey</span></span>'>Amanda Harvey</option>
-                                  <option value="DH" selected data-option-template='<span class="d-flex align-items-center"><img class="avatar avatar-xss avatar-circle mr-2" src="assets/img/160x160/img3.jpg" alt="Image Description" /><span class="text-truncate">David Harrison</span></span>'>David Harrison</option>
-                                  <option value="SK" data-option-template='<span class="d-flex align-items-center"><img class="avatar avatar-xss avatar-circle mr-2" src="assets/img/160x160/img4.jpg" alt="Image Description" /><span class="text-truncate">Sam Kart</span></span>'>Sam Kart</option>
-                                  <option value="FH" data-option-template='<span class="d-flex align-items-center"><img class="avatar avatar-xss avatar-circle mr-2" src="assets/img/160x160/img5.jpg" alt="Image Description" /><span class="text-truncate">Finch Hoot</span></span>'>Finch Hoot</option>
-                                  <option value="CQ" selected data-option-template='<span class="d-flex align-items-center"><img class="avatar avatar-xss avatar-circle mr-2" src="assets/img/160x160/img6.jpg" alt="Image Description" /><span class="text-truncate">Costa Quinn</span></span>'>Costa Quinn</option>
+                                  <option value="AH" selected data-option-template='<span class="d-flex align-items-center"><img class="avatar avatar-xss avatar-circle mr-2" src="{{ asset("img/160x160/img10.jpg") }}" alt="Image Description" /><span class="text-truncate">Amanda Harvey</span></span>'>Amanda Harvey</option>
+                                  <option value="DH" selected data-option-template='<span class="d-flex align-items-center"><img class="avatar avatar-xss avatar-circle mr-2" src="{{ asset("img/160x160/img3.jpg") }}" alt="Image Description" /><span class="text-truncate">David Harrison</span></span>'>David Harrison</option>
+                                  <option value="SK" data-option-template='<span class="d-flex align-items-center"><img class="avatar avatar-xss avatar-circle mr-2" src="{{ asset("img/160x160/img4.jpg") }}" alt="Image Description" /><span class="text-truncate">Sam Kart</span></span>'>Sam Kart</option>
+                                  <option value="FH" data-option-template='<span class="d-flex align-items-center"><img class="avatar avatar-xss avatar-circle mr-2" src="{{ asset("img/160x160/img5.jpg") }}" alt="Image Description" /><span class="text-truncate">Finch Hoot</span></span>'>Finch Hoot</option>
+                                  <option value="CQ" selected data-option-template='<span class="d-flex align-items-center"><img class="avatar avatar-xss avatar-circle mr-2" src="{{ asset("img/160x160/img00.jpg") }}" alt="Image Description" /><span class="text-truncate">Costa Quinn</span></span>'>Costa Quinn</option>
                                 </select>
                                 <!-- End Select -->
                               </div>
@@ -366,7 +366,7 @@
                       <label class="custom-control-label" for="datatableCheckAll"></label>
                     </div>
                   </th>
-                  <th class="table-column-pl-0">Project</th>
+                  <th class="table-column-pl-0">Dossier</th>
                   <th>Tasks</th>
                   <th>Members</th>
                   <th>Status</th>
@@ -387,7 +387,7 @@
                   </td>
                   <td class="table-column-pl-0">
                     <a class="d-flex align-items-center" href="project.php">
-                      <img class="avatar" src="assets/svg/brands/guideline.svg" alt="Image Description">
+                      <img class="avatar" src="{{ asset('svg/brands/guideline.svg') }}" alt="Image Description">
                       <div class="ml-3">
                         <span class="d-block h5 text-hover-primary mb-0">Cloud computing web service</span>
                         <span class="d-block font-size-sm text-body">Updated 2 minutes ago</span>
@@ -403,10 +403,10 @@
                     <!-- Avatar Group -->
                     <div class="avatar-group avatar-group-xs avatar-circle">
                       <a class="avatar" href="user-profile.php" data-toggle="tooltip" data-placement="top" title="Ella Lauda">
-                        <img class="avatar-img" src="assets/img/160x160/img9.jpg" alt="Image Description">
+                        <img class="avatar-img" src="{{ asset('img/160x160/img9.jpg') }}" alt="Image Description">
                       </a>
                       <a class="avatar" href="user-profile.php" data-toggle="tooltip" data-placement="top" title="David Harrison">
-                        <img class="avatar-img" src="assets/img/160x160/img3.jpg" alt="Image Description">
+                        <img class="avatar-img" src="{{ asset('img/160x160/img3.jpg') }}" alt="Image Description">
                       </a>
                       <a class="avatar avatar-soft-dark" href="user-profile.php" data-toggle="tooltip" data-placement="top" title="Antony Taylor">
                         <span class="avatar-initials">A</span>
@@ -415,7 +415,7 @@
                         <span class="avatar-initials">S</span>
                       </a>
                       <a class="avatar" href="user-profile.php" data-toggle="tooltip" data-placement="top" title="Finch Hoot">
-                        <img class="avatar-img" src="assets/img/160x160/img5.jpg" alt="Image Description">
+                        <img class="avatar-img" src="{{ asset('img/160x160/img5.jpg') }}" alt="Image Description">
                       </a>
                     </div>
                     <!-- End Avatar Group -->
@@ -437,7 +437,7 @@
                     </a>
                   </td>
                   <td>
-                    <a class="text-body" href="project-activity.php">
+                    <a class="text-body" href="/chatify">
                       <i class="tio-chat-outlined"></i> 2
                     </a>
                   </td>
@@ -493,7 +493,7 @@
                   </td>
                   <td class="table-column-pl-0">
                     <a class="d-flex align-items-center" href="project.php">
-                      <img class="avatar" src="assets/svg/brands/capsule.svg" alt="Image Description">
+                      <img class="avatar" src="{{ asset('svg/brands/capsule.svg') }}" alt="Image Description">
                       <div class="ml-3">
                         <span class="d-block h5 text-hover-primary mb-0">Build stronger customer relationships</span>
                         <span class="d-block font-size-sm text-body">Updated 1 months ago</span>
@@ -505,10 +505,10 @@
                     <!-- Avatar Group -->
                     <div class="avatar-group avatar-group-xs avatar-circle">
                       <a class="avatar" href="user-profile.php" data-toggle="tooltip" data-placement="top" title="Costa Quinn">
-                        <img class="avatar-img" src="assets/img/160x160/img6.jpg" alt="Image Description">
+                        <img class="avatar-img" src="{{ asset('img/160x160/img00.jpg') }}" alt="Image Description">
                       </a>
                       <a class="avatar" href="user-profile.php" data-toggle="tooltip" data-placement="top" title="Clarice Boone">
-                        <img class="avatar-img" src="assets/img/160x160/img7.jpg" alt="Image Description">
+                        <img class="avatar-img" src="{{ asset('img/160x160/img7.jpg') }}" alt="Image Description">
                       </a>
                       <a class="avatar avatar-soft-danger" href="user-profile.php" data-toggle="tooltip" data-placement="top" title="Adam Keep">
                         <span class="avatar-initials">A</span>
@@ -559,16 +559,16 @@
                     <!-- Avatar Group -->
                     <div class="avatar-group avatar-group-xs avatar-circle">
                       <a class="avatar" href="user-profile.php" data-toggle="tooltip" data-placement="top" title="Finch Hoot">
-                        <img class="avatar-img" src="assets/img/160x160/img5.jpg" alt="Image Description">
+                        <img class="avatar-img" src="{{ asset('img/160x160/img5.jpg') }}" alt="Image Description">
                       </a>
                       <a class="avatar avatar-soft-dark" href="user-profile.php" data-toggle="tooltip" data-placement="top" title="Bob Bardly">
                         <span class="avatar-initials">B</span>
                       </a>
                       <a class="avatar" href="user-profile.php" data-toggle="tooltip" data-placement="top" title="Linda Bates">
-                        <img class="avatar-img" src="assets/img/160x160/img8.jpg" alt="Image Description">
+                        <img class="avatar-img" src="{{ asset('img/160x160/img8.jpg') }}" alt="Image Description">
                       </a>
                       <a class="avatar" href="user-profile.php" data-toggle="tooltip" data-placement="top" title="Ella Lauda">
-                        <img class="avatar-img" src="assets/img/160x160/img9.jpg" alt="Image Description">
+                        <img class="avatar-img" src="{{ asset('img/160x160/img9.jpg') }}" alt="Image Description">
                       </a>
                     </div>
                     <!-- End Avatar Group -->
@@ -590,7 +590,7 @@
                     </a>
                   </td>
                   <td>
-                    <a class="text-body" href="project-activity.php">
+                    <a class="text-body" href="/chatify">
                       <i class="tio-chat-outlined"></i> 21
                     </a>
                   </td>
@@ -606,7 +606,7 @@
                   </td>
                   <td class="table-column-pl-0">
                     <a class="d-flex align-items-center" href="project.php">
-                      <img class="avatar" src="assets/svg/brands/mailchimp.svg" alt="Image Description">
+                      <img class="avatar" src="{{ asset('svg/brands/mailchimp.svg') }}" alt="Image Description">
                       <div class="ml-3">
                         <span class="d-block h5 text-hover-primary mb-0">Update subscription method <i class="tio-verified text-primary" data-toggle="tooltip" data-placement="top" title="Earned extra bonus"></i></span>
                         <span class="d-block font-size-sm text-body">Updated 2 hours ago</span>
@@ -618,10 +618,10 @@
                     <!-- Avatar Group -->
                     <div class="avatar-group avatar-group-xs avatar-circle">
                       <a class="avatar" href="user-profile.php" data-toggle="tooltip" data-placement="top" title="Costa Quinn">
-                        <img class="avatar-img" src="assets/img/160x160/img6.jpg" alt="Image Description">
+                        <img class="avatar-img" src="{{ asset('img/160x160/img00.jpg') }}" alt="Image Description">
                       </a>
                       <a class="avatar" href="user-profile.php" data-toggle="tooltip" data-placement="top" title="Clarice Boone">
-                        <img class="avatar-img" src="assets/img/160x160/img7.jpg" alt="Image Description">
+                        <img class="avatar-img" src="{{ asset('img/160x160/img7.jpg') }}" alt="Image Description">
                       </a>
                       <a class="avatar avatar-soft-danger" href="user-profile.php" data-toggle="tooltip" data-placement="top" title="Adam Keep">
                         <span class="avatar-initials">A</span>
@@ -676,16 +676,16 @@
                     <!-- Avatar Group -->
                     <div class="avatar-group avatar-group-xs avatar-circle">
                       <a class="avatar" href="user-profile.php" data-toggle="tooltip" data-placement="top" title="Costa Quinn">
-                        <img class="avatar-img" src="assets/img/160x160/img6.jpg" alt="Image Description">
+                        <img class="avatar-img" src="{{ asset('img/160x160/img00.jpg') }}" alt="Image Description">
                       </a>
                       <a class="avatar avatar-soft-info" href="user-profile.php" data-toggle="tooltip" data-placement="top" title="Bob Bardly">
                         <span class="avatar-initials">B</span>
                       </a>
                       <a class="avatar" href="user-profile.php" data-toggle="tooltip" data-placement="top" title="Clarice Boone">
-                        <img class="avatar-img" src="assets/img/160x160/img7.jpg" alt="Image Description">
+                        <img class="avatar-img" src="{{ asset('img/160x160/img7.jpg') }}" alt="Image Description">
                       </a>
                       <a class="avatar" href="user-profile.php" data-toggle="tooltip" data-placement="top" title="Sam Kart">
-                        <img class="avatar-img" src="assets/img/160x160/img4.jpg" alt="Image Description">
+                        <img class="avatar-img" src="{{ asset('img/160x160/img4.jpg') }}" alt="Image Description">
                       </a>
                     </div>
                     <!-- End Avatar Group -->
@@ -719,7 +719,7 @@
                   </td>
                   <td class="table-column-pl-0">
                     <a class="d-flex align-items-center" href="project.php">
-                      <img class="avatar" src="assets/svg/brands/spec.svg" alt="Image Description">
+                      <img class="avatar" src="{{ asset('svg/brands/spec.svg') }}" alt="Image Description">
                       <div class="ml-3">
                         <span class="d-block h5 text-hover-primary mb-0">Install Front pay</span>
                         <span class="d-block font-size-sm text-body">Updated 23 hours ago</span>
@@ -745,7 +745,7 @@
                     </a>
                   </td>
                   <td>
-                    <a class="text-body" href="project-activity.php">
+                    <a class="text-body" href="/chatify">
                       <i class="tio-chat-outlined"></i> 1
                     </a>
                   </td>
@@ -779,10 +779,10 @@
                     <!-- Avatar Group -->
                     <div class="avatar-group avatar-group-xs avatar-circle">
                       <a class="avatar" href="user-profile.php" data-toggle="tooltip" data-placement="top" title="Amanda Harvey">
-                        <img class="avatar-img" src="assets/img/160x160/img10.jpg" alt="Image Description">
+                        <img class="avatar-img" src="{{ asset('img/160x160/img10.jpg') }}" alt="Image Description">
                       </a>
                       <a class="avatar" href="user-profile.php" data-toggle="tooltip" data-placement="top" title="David Harrison">
-                        <img class="avatar-img" src="assets/img/160x160/img3.jpg" alt="Image Description">
+                        <img class="avatar-img" src="{{ asset('img/160x160/img3.jpg') }}" alt="Image Description">
                       </a>
                       <a class="avatar avatar-soft-info" href="user-profile.php" data-toggle="tooltip" data-placement="top" title="Lisa Iston">
                         <span class="avatar-initials">L</span>
@@ -818,7 +818,7 @@
                   </td>
                   <td class="table-column-pl-0">
                     <a class="d-flex align-items-center" href="project.php">
-                      <img class="avatar" src="assets/svg/brands/jira.svg" alt="Image Description">
+                      <img class="avatar" src="{{ asset('svg/brands/jira.svg') }}" alt="Image Description">
                       <div class="ml-3">
                         <span class="d-block h5 text-hover-primary mb-0">Develop Slack mobile app</span>
                         <span class="d-block font-size-sm text-body">Updated 18 minutes ago</span>
@@ -834,10 +834,10 @@
                     <!-- Avatar Group -->
                     <div class="avatar-group avatar-group-xs avatar-circle">
                       <a class="avatar" href="user-profile.php" data-toggle="tooltip" data-placement="top" title="Ella Lauda">
-                        <img class="avatar-img" src="assets/img/160x160/img9.jpg" alt="Image Description">
+                        <img class="avatar-img" src="{{ asset('img/160x160/img9.jpg') }}" alt="Image Description">
                       </a>
                       <a class="avatar" href="user-profile.php" data-toggle="tooltip" data-placement="top" title="David Harrison">
-                        <img class="avatar-img" src="assets/img/160x160/img3.jpg" alt="Image Description">
+                        <img class="avatar-img" src="{{ asset('img/160x160/img3.jpg') }}" alt="Image Description">
                       </a>
                       <a class="avatar avatar-soft-dark" href="user-profile.php" data-toggle="tooltip" data-placement="top" title="Antony Taylor">
                         <span class="avatar-initials">A</span>
@@ -891,13 +891,13 @@
                     <!-- Avatar Group -->
                     <div class="avatar-group avatar-group-xs avatar-circle">
                       <a class="avatar" href="user-profile.php" data-toggle="tooltip" data-placement="top" title="Finch Hoot">
-                        <img class="avatar-img" src="assets/img/160x160/img5.jpg" alt="Image Description">
+                        <img class="avatar-img" src="{{ asset('img/160x160/img5.jpg') }}" alt="Image Description">
                       </a>
                       <a class="avatar avatar-soft-dark" href="user-profile.php" data-toggle="tooltip" data-placement="top" title="Bob Bardly">
                         <span class="avatar-initials">B</span>
                       </a>
                       <a class="avatar" href="user-profile.php" data-toggle="tooltip" data-placement="top" title="Clarice Boone">
-                        <img class="avatar-img" src="assets/img/160x160/img7.jpg" alt="Image Description">
+                        <img class="avatar-img" src="{{ asset('img/160x160/img7.jpg') }}" alt="Image Description">
                       </a>
                       <a class="avatar avatar-soft-danger" href="user-profile.php" data-toggle="tooltip" data-placement="top" title="Adam Keep">
                         <span class="avatar-initials">A</span>
@@ -922,7 +922,7 @@
                     </a>
                   </td>
                   <td>
-                    <a class="text-body" href="project-activity.php">
+                    <a class="text-body" href="/chatify">
                       <i class="tio-chat-outlined"></i> 15
                     </a>
                   </td>
@@ -938,7 +938,7 @@
                   </td>
                   <td class="table-column-pl-0">
                     <a class="d-flex align-items-center" href="project.php">
-                      <img class="avatar" src="assets/svg/brands/figma.svg" alt="Image Description">
+                      <img class="avatar" src="{{ asset('svg/brands/figma.svg') }}" alt="Image Description">
                       <div class="ml-3">
                         <span class="d-block h5 text-hover-primary mb-0">Create a new theme <i class="tio-verified text-primary" data-toggle="tooltip" data-placement="top" title="Earned extra bonus"></i></span>
                         <span class="d-block font-size-sm text-body">Updated 5 days ago</span>
@@ -976,7 +976,7 @@
                   </td>
                   <td class="table-column-pl-0">
                     <a class="d-flex align-items-center" href="project.php">
-                      <img class="avatar" src="assets/svg/brands/google-webdev.svg" alt="Image Description">
+                      <img class="avatar" src="{{ asset('svg/brands/google-webdev.svg') }}" alt="Image Description">
                       <div class="ml-3">
                         <span class="d-block h5 text-hover-primary mb-0">Create a new database for Webdev</span>
                         <span class="d-block font-size-sm text-body">Updated 2 hours ago</span>
@@ -988,13 +988,13 @@
                     <!-- Avatar Group -->
                     <div class="avatar-group avatar-group-xs avatar-circle">
                       <a class="avatar" href="user-profile.php" data-toggle="tooltip" data-placement="top" title="Sam Kart">
-                        <img class="avatar-img" src="assets/img/160x160/img4.jpg" alt="Image Description">
+                        <img class="avatar-img" src="{{ asset('img/160x160/img4.jpg') }}" alt="Image Description">
                       </a>
                       <a class="avatar avatar-soft-danger" href="user-profile.php" data-toggle="tooltip" data-placement="top" title="Teresa Eyker">
                         <span class="avatar-initials">T</span>
                       </a>
                       <a class="avatar" href="user-profile.php" data-toggle="tooltip" data-placement="top" title="Amanda Harvey">
-                        <img class="avatar-img" src="assets/img/160x160/img10.jpg" alt="Image Description">
+                        <img class="avatar-img" src="{{ asset('img/160x160/img10.jpg') }}" alt="Image Description">
                       </a>
                       <a class="avatar avatar-light avatar-circle" href="user-profile.php" data-toggle="tooltip" data-placement="top" title="Brian Halligan, Rachel Doe and 7 more">
                         <span class="avatar-initials">+9</span>
@@ -1019,7 +1019,7 @@
                     </a>
                   </td>
                   <td>
-                    <a class="text-body" href="project-activity.php">
+                    <a class="text-body" href="/chatify">
                       <i class="tio-chat-outlined"></i> 7
                     </a>
                   </td>
@@ -1053,13 +1053,13 @@
                     <!-- Avatar Group -->
                     <div class="avatar-group avatar-group-xs avatar-circle">
                       <a class="avatar" href="user-profile.php" data-toggle="tooltip" data-placement="top" title="Sam Kart">
-                        <img class="avatar-img" src="assets/img/160x160/img4.jpg" alt="Image Description">
+                        <img class="avatar-img" src="{{ asset('img/160x160/img4.jpg') }}" alt="Image Description">
                       </a>
                       <a class="avatar avatar-soft-danger" href="user-profile.php" data-toggle="tooltip" data-placement="top" title="Teresa Eyker">
                         <span class="avatar-initials">T</span>
                       </a>
                       <a class="avatar" href="user-profile.php" data-toggle="tooltip" data-placement="top" title="Amanda Harvey">
-                        <img class="avatar-img" src="assets/img/160x160/img10.jpg" alt="Image Description">
+                        <img class="avatar-img" src="{{ asset('img/160x160/img10.jpg') }}" alt="Image Description">
                       </a>
                     </div>
                     <!-- End Avatar Group -->
@@ -1081,7 +1081,7 @@
                     </a>
                   </td>
                   <td>
-                    <a class="text-body" href="project-activity.php">
+                    <a class="text-body" href="/chatify">
                       <i class="tio-chat-outlined"></i> 9
                     </a>
                   </td>
@@ -1097,7 +1097,7 @@
                   </td>
                   <td class="table-column-pl-0">
                     <a class="d-flex align-items-center" href="project.php">
-                      <img class="avatar" src="assets/svg/brands/bookingcom.svg" alt="Image Description">
+                      <img class="avatar" src="{{ asset('svg/brands/bookingcom.svg') }}" alt="Image Description">
                       <div class="ml-3">
                         <span class="d-block h5 text-hover-primary mb-0">Set up a datatable for Booking.com</span>
                         <span class="d-block font-size-sm text-body">Updated 13 days ago</span>
@@ -1149,10 +1149,10 @@
                     <!-- Avatar Group -->
                     <div class="avatar-group avatar-group-xs avatar-circle">
                       <a class="avatar" href="user-profile.php" data-toggle="tooltip" data-placement="top" title="Costa Quinn">
-                        <img class="avatar-img" src="assets/img/160x160/img6.jpg" alt="Image Description">
+                        <img class="avatar-img" src="{{ asset('img/160x160/img00.jpg') }}" alt="Image Description">
                       </a>
                       <a class="avatar" href="user-profile.php" data-toggle="tooltip" data-placement="top" title="Clarice Boone">
-                        <img class="avatar-img" src="assets/img/160x160/img7.jpg" alt="Image Description">
+                        <img class="avatar-img" src="{{ asset('img/160x160/img7.jpg') }}" alt="Image Description">
                       </a>
                       <a class="avatar avatar-soft-dark" href="user-profile.php" data-toggle="tooltip" data-placement="top" title="Zack Ins">
                         <span class="avatar-initials">Z</span>
@@ -1189,7 +1189,7 @@
                   </td>
                   <td class="table-column-pl-0">
                     <a class="d-flex align-items-center" href="project.php">
-                      <img class="avatar" src="assets/svg/brands/prosperops.svg" alt="Image Description">
+                      <img class="avatar" src="{{ asset('svg/brands/prosperops.svg') }}" alt="Image Description">
                       <div class="ml-3">
                         <span class="d-block h5 text-hover-primary mb-0">Prosperops</span>
                         <span class="d-block font-size-sm text-body">Updated 1 hour ago</span>
@@ -1271,7 +1271,7 @@
                   </td>
                   <td class="table-column-pl-0">
                     <a class="d-flex align-items-center" href="project.php">
-                      <img class="avatar" src="assets/svg/brands/spotify.svg" alt="Image Description">
+                      <img class="avatar" src="{{ asset('svg/brands/spotify.svg') }}" alt="Image Description">
                       <div class="ml-3">
                         <span class="d-block h5 text-hover-primary mb-0">Redesigning the Spotify main page</span>
                         <span class="d-block font-size-sm text-body">Updated 27 minutes ago</span>
@@ -1283,10 +1283,10 @@
                     <!-- Avatar Group -->
                     <div class="avatar-group avatar-group-xs avatar-circle">
                       <a class="avatar" href="user-profile.php" data-toggle="tooltip" data-placement="top" title="Amanda Harvey">
-                        <img class="avatar-img" src="assets/img/160x160/img10.jpg" alt="Image Description">
+                        <img class="avatar-img" src="{{ asset('img/160x160/img10.jpg') }}" alt="Image Description">
                       </a>
                       <a class="avatar" href="user-profile.php" data-toggle="tooltip" data-placement="top" title="David Harrison">
-                        <img class="avatar-img" src="assets/img/160x160/img3.jpg" alt="Image Description">
+                        <img class="avatar-img" src="{{ asset('img/160x160/img3.jpg') }}" alt="Image Description">
                       </a>
                       <a class="avatar avatar-soft-info" href="user-profile.php" data-toggle="tooltip" data-placement="top" title="Lisa Iston">
                         <span class="avatar-initials">L</span>
@@ -1330,7 +1330,7 @@
                         <span class="avatar-initials">T</span>
                       </div>
                       <div class="ml-3">
-                        <span class="d-block h5 text-hover-primary mb-0">The Hub project <i class="tio-verified text-primary" data-toggle="tooltip" data-placement="top" title="Earned extra bonus"></i></span>
+                        <span class="d-block h5 text-hover-primary mb-0">The Hub Dossier <i class="tio-verified text-primary" data-toggle="tooltip" data-placement="top" title="Earned extra bonus"></i></span>
                         <span class="d-block font-size-sm text-body">Updated 9 hours ago</span>
                       </div>
                     </a>
@@ -1340,16 +1340,16 @@
                     <!-- Avatar Group -->
                     <div class="avatar-group avatar-group-xs avatar-circle">
                       <a class="avatar" href="user-profile.php" data-toggle="tooltip" data-placement="top" title="Finch Hoot">
-                        <img class="avatar-img" src="assets/img/160x160/img5.jpg" alt="Image Description">
+                        <img class="avatar-img" src="{{ asset('img/160x160/img5.jpg') }}" alt="Image Description">
                       </a>
                       <a class="avatar avatar-soft-dark" href="user-profile.php" data-toggle="tooltip" data-placement="top" title="Bob Bardly">
                         <span class="avatar-initials">B</span>
                       </a>
                       <a class="avatar" href="user-profile.php" data-toggle="tooltip" data-placement="top" title="Linda Bates">
-                        <img class="avatar-img" src="assets/img/160x160/img8.jpg" alt="Image Description">
+                        <img class="avatar-img" src="{{ asset('img/160x160/img8.jpg') }}" alt="Image Description">
                       </a>
                       <a class="avatar" href="user-profile.php" data-toggle="tooltip" data-placement="top" title="Ella Lauda">
-                        <img class="avatar-img" src="assets/img/160x160/img9.jpg" alt="Image Description">
+                        <img class="avatar-img" src="{{ asset('img/160x160/img9.jpg') }}" alt="Image Description">
                       </a>
                     </div>
                     <!-- End Avatar Group -->
@@ -1383,7 +1383,7 @@
                   </td>
                   <td class="table-column-pl-0">
                     <a class="d-flex align-items-center" href="project.php">
-                      <img class="avatar" src="assets/svg/brands/digitalocean.svg" alt="Image Description">
+                      <img class="avatar" src="{{ asset('svg/brands/digitalocean.svg') }}" alt="Image Description">
                       <div class="ml-3">
                         <span class="d-block h5 text-hover-primary mb-0">Working on a new Cloud computing</span>
                         <span class="d-block font-size-sm text-body">Updated 5 days ago</span>
@@ -1395,10 +1395,10 @@
                     <!-- Avatar Group -->
                     <div class="avatar-group avatar-group-xs avatar-circle">
                       <a class="avatar" href="user-profile.php" data-toggle="tooltip" data-placement="top" title="Costa Quinn">
-                        <img class="avatar-img" src="assets/img/160x160/img6.jpg" alt="Image Description">
+                        <img class="avatar-img" src="{{ asset('img/160x160/img00.jpg') }}" alt="Image Description">
                       </a>
                       <a class="avatar" href="user-profile.php" data-toggle="tooltip" data-placement="top" title="Clarice Boone">
-                        <img class="avatar-img" src="assets/img/160x160/img7.jpg" alt="Image Description">
+                        <img class="avatar-img" src="{{ asset('img/160x160/img7.jpg') }}" alt="Image Description">
                       </a>
                       <a class="avatar avatar-soft-danger" href="user-profile.php" data-toggle="tooltip" data-placement="top" title="Adam Keep">
                         <span class="avatar-initials">A</span>
@@ -1423,7 +1423,7 @@
                     </a>
                   </td>
                   <td>
-                    <a class="text-body" href="project-activity.php">
+                    <a class="text-body" href="/chatify">
                       <i class="tio-chat-outlined"></i> 29
                     </a>
                   </td>
@@ -1467,7 +1467,7 @@
                     </a>
                   </td>
                   <td>
-                    <a class="text-body" href="project-activity.php">
+                    <a class="text-body" href="/chatify">
                       <i class="tio-chat-outlined"></i> 11
                     </a>
                   </td>
@@ -1483,7 +1483,7 @@
                   </td>
                   <td class="table-column-pl-0">
                     <a class="d-flex align-items-center" href="project.php">
-                      <img class="avatar" src="assets/svg/brands/atlassian.svg" alt="Image Description">
+                      <img class="avatar" src="{{ asset('svg/brands/atlassian.svg') }}" alt="Image Description">
                       <div class="ml-3">
                         <span class="d-block h5 text-hover-primary mb-0">New software tool</span>
                         <span class="d-block font-size-sm text-body">Updated 7 minutes ago</span>
@@ -1495,13 +1495,13 @@
                     <!-- Avatar Group -->
                     <div class="avatar-group avatar-group-xs avatar-circle">
                       <a class="avatar" href="user-profile.php" data-toggle="tooltip" data-placement="top" title="Sam Kart">
-                        <img class="avatar-img" src="assets/img/160x160/img4.jpg" alt="Image Description">
+                        <img class="avatar-img" src="{{ asset('img/160x160/img4.jpg') }}" alt="Image Description">
                       </a>
                       <a class="avatar avatar-soft-danger" href="user-profile.php" data-toggle="tooltip" data-placement="top" title="Teresa Eyker">
                         <span class="avatar-initials">T</span>
                       </a>
                       <a class="avatar" href="user-profile.php" data-toggle="tooltip" data-placement="top" title="Amanda Harvey">
-                        <img class="avatar-img" src="assets/img/160x160/img10.jpg" alt="Image Description">
+                        <img class="avatar-img" src="{{ asset('img/160x160/img10.jpg') }}" alt="Image Description">
                       </a>
                       <a class="avatar avatar-light avatar-circle" href="user-profile.php" data-toggle="tooltip" data-placement="top" title="Brian Halligan, Rachel Doe and 7 more">
                         <span class="avatar-initials">+9</span>
@@ -1538,7 +1538,7 @@
                   </td>
                   <td class="table-column-pl-0">
                     <a class="d-flex align-items-center" href="project.php">
-                      <img class="avatar" src="assets/svg/brands/frontapp.svg" alt="Image Description">
+                      <img class="avatar" src="{{ asset('svg/brands/frontapp.svg') }}" alt="Image Description">
                       <div class="ml-3">
                         <span class="d-block h5 text-hover-primary mb-0">Increase email conversion rating</span>
                         <span class="d-block font-size-sm text-body">Updated 1 hour ago</span>
@@ -1554,13 +1554,13 @@
                     <!-- Avatar Group -->
                     <div class="avatar-group avatar-group-xs avatar-circle">
                       <a class="avatar" href="user-profile.php" data-toggle="tooltip" data-placement="top" title="Finch Hoot">
-                        <img class="avatar-img" src="assets/img/160x160/img5.jpg" alt="Image Description">
+                        <img class="avatar-img" src="{{ asset('img/160x160/img5.jpg') }}" alt="Image Description">
                       </a>
                       <a class="avatar avatar-soft-dark" href="user-profile.php" data-toggle="tooltip" data-placement="top" title="Bob Bardly">
                         <span class="avatar-initials">B</span>
                       </a>
                       <a class="avatar" href="user-profile.php" data-toggle="tooltip" data-placement="top" title="Clarice Boone">
-                        <img class="avatar-img" src="assets/img/160x160/img7.jpg" alt="Image Description">
+                        <img class="avatar-img" src="{{ asset('img/160x160/img7.jpg') }}" alt="Image Description">
                       </a>
                       <a class="avatar avatar-soft-danger" href="user-profile.php" data-toggle="tooltip" data-placement="top" title="Adam Keep">
                         <span class="avatar-initials">A</span>
@@ -1585,7 +1585,7 @@
                     </a>
                   </td>
                   <td>
-                    <a class="text-body" href="project-activity.php">
+                    <a class="text-body" href="/chatify">
                       <i class="tio-chat-outlined"></i> 5
                     </a>
                   </td>
@@ -1605,7 +1605,7 @@
                         <span class="avatar-initials">E</span>
                       </div>
                       <div class="ml-3">
-                        <span class="d-block h5 text-hover-primary mb-0">Ethereum project</span>
+                        <span class="d-block h5 text-hover-primary mb-0">Ethereum Dossier</span>
                         <span class="d-block font-size-sm text-body">Updated 5 days ago</span>
                       </div>
                     </a>
@@ -2049,7 +2049,7 @@
             <li class="step-item">
               <div class="step-content-wrapper">
                 <div class="step-avatar">
-                  <img class="step-avatar-img" src="assets/img/160x160/img9.jpg" alt="Image Description">
+                  <img class="step-avatar-img" src="{{ asset('img/160x160/img9.jpg') }}" alt="Image Description">
                 </div>
 
                 <div class="step-content">
@@ -2064,7 +2064,7 @@
                         <div class="col-6">
                           <div class="media">
                               <span class="mt-1 mr-2">
-                                <img class="avatar avatar-xs" src="assets/svg/brands/excel.svg" alt="Image Description">
+                                <img class="avatar avatar-xs" src="{{ asset('svg/brands/excel.svg') }}" alt="Image Description">
                               </span>
                             <div class="media-body text-truncate">
                               <span class="d-block font-size-sm text-dark text-truncate" title="weekly-reports.xls">weekly-reports.xls</span>
@@ -2075,7 +2075,7 @@
                         <div class="col-6">
                           <div class="media">
                               <span class="mt-1 mr-2">
-                                <img class="avatar avatar-xs" src="assets/svg/brands/word.svg" alt="Image Description">
+                                <img class="avatar avatar-xs" src="{{ asset('svg/brands/word.svg') }}" alt="Image Description">
                               </span>
                             <div class="media-body text-truncate">
                               <span class="d-block font-size-sm text-dark text-truncate" title="weekly-reports.xls">weekly-reports.xls</span>
@@ -2114,7 +2114,7 @@
             <li class="step-item">
               <div class="step-content-wrapper">
                 <div class="step-avatar">
-                  <img class="step-avatar-img" src="assets/img/160x160/img3.jpg" alt="Image Description">
+                  <img class="step-avatar-img" src="{{ asset('img/160x160/img3.jpg') }}" alt="Image Description">
                 </div>
 
                 <div class="step-content">
@@ -2126,13 +2126,13 @@
                     <li class="list-group-item list-group-item-light">
                       <div class="row gx-1">
                         <div class="col">
-                          <img class="img-fluid rounded ie-sidebar-activity-img" src="assets/svg/illustrations/card-1.svg" alt="Image Description">
+                          <img class="img-fluid rounded ie-sidebar-activity-img" src="{{ asset('svg/illustrations/card-1.svg') }}" alt="Image Description">
                         </div>
                         <div class="col">
-                          <img class="img-fluid rounded ie-sidebar-activity-img" src="assets/svg/illustrations/card-2.svg" alt="Image Description">
+                          <img class="img-fluid rounded ie-sidebar-activity-img" src="{{ asset('svg/illustrations/card-2.svg') }}" alt="Image Description">
                         </div>
                         <div class="col">
-                          <img class="img-fluid rounded ie-sidebar-activity-img" src="assets/svg/illustrations/card-3.svg" alt="Image Description">
+                          <img class="img-fluid rounded ie-sidebar-activity-img" src="{{ asset('svg/illustrations/card-3.svg') }}" alt="Image Description">
                         </div>
                         <div class="col-auto align-self-center">
                           <div class="text-center">
@@ -2169,7 +2169,7 @@
             <li class="step-item">
               <div class="step-content-wrapper">
                 <div class="step-avatar">
-                  <img class="step-avatar-img" src="assets/img/160x160/img7.jpg" alt="Image Description">
+                  <img class="step-avatar-img" src="{{ asset('img/160x160/img7.jpg') }}" alt="Image Description">
                 </div>
 
                 <div class="step-content">
@@ -2187,7 +2187,7 @@
             <li class="step-item">
               <div class="step-content-wrapper">
                 <div class="step-avatar">
-                  <img class="step-avatar-img" src="assets/img/160x160/img5.jpg" alt="Image Description">
+                  <img class="step-avatar-img" src="{{ asset('img/160x160/img5.jpg') }}" alt="Image Description">
                 </div>
 
                 <div class="step-content">
@@ -2209,7 +2209,7 @@
                   </span>
 
                 <div class="step-content">
-                  <h5 class="mb-1">Project status updated</h5>
+                  <h5 class="mb-1">Dossier status updated</h5>
 
                   <p class="font-size-sm mb-1">Marked <a class="text-uppercase" href="#"><i class="tio-folder-bookmarked"></i> Fr-3</a> as <span class="badge badge-soft-primary badge-pill"><span class="legend-indicator bg-primary"></span>"In progress"</span></p>
 
@@ -2244,7 +2244,7 @@
           <div class="modal-body p-sm-5">
             <div class="text-center">
               <div class="w-75 w-sm-50 mx-auto mb-4">
-                <img class="img-fluid" src="assets/svg/illustrations/graphs.svg" alt="Image Description">
+                <img class="img-fluid" src="{{ asset('svg/illustrations/graphs.svg') }}" alt="Image Description">
               </div>
 
               <h4 class="h1">Welcome to Front</h4>
@@ -2261,16 +2261,16 @@
             <div class="w-85 mx-auto">
               <div class="row justify-content-between">
                 <div class="col">
-                  <img class="img-fluid ie-welcome-brands" src="assets/svg/brands/gitlab-gray.svg" alt="Image Description">
+                  <img class="img-fluid ie-welcome-brands" src="{{ asset('svg/brands/gitlab-gray.svg') }}" alt="Image Description">
                 </div>
                 <div class="col">
-                  <img class="img-fluid ie-welcome-brands" src="assets/svg/brands/fitbit-gray.svg" alt="Image Description">
+                  <img class="img-fluid ie-welcome-brands" src="{{ asset('svg/brands/fitbit-gray.svg') }}" alt="Image Description">
                 </div>
                 <div class="col">
-                  <img class="img-fluid ie-welcome-brands" src="assets/svg/brands/flow-xo-gray.svg" alt="Image Description">
+                  <img class="img-fluid ie-welcome-brands" src="{{ asset('svg/brands/flow-xo-gray.svg') }}" alt="Image Description">
                 </div>
                 <div class="col">
-                  <img class="img-fluid ie-welcome-brands" src="assets/svg/brands/layar-gray.svg" alt="Image Description">
+                  <img class="img-fluid ie-welcome-brands" src="{{ asset('svg/brands/layar-gray.svg') }}" alt="Image Description">
                 </div>
               </div>
             </div>
@@ -2287,7 +2287,7 @@
         <div class="modal-content">
           <!-- Header -->
           <div class="modal-header">
-            <h4 id="newProjectModalTitle" class="modal-title">New project</h4>
+            <h4 id="newProjectModalTitle" class="modal-title">Nouveau Dossier</h4>
 
             <button type="button" class="btn btn-icon btn-sm btn-ghost-secondary" data-dismiss="modal" aria-label="Close">
               <i class="tio-clear tio-lg"></i>
@@ -2326,7 +2326,7 @@
                      }'>
                     <span class="step-icon step-icon-soft-dark">2</span>
                     <div class="step-content">
-                      <span class="step-title">Terms</span>
+                      <span class="step-title">Termes du contrat</span>
                     </div>
                   </a>
                 </li>
@@ -2338,7 +2338,7 @@
                      }'>
                     <span class="step-icon step-icon-soft-dark">3</span>
                     <div class="step-content">
-                      <span class="step-title">Members</span>
+                      <span class="step-title">Membres</span>
                     </div>
                   </a>
                 </li>
@@ -2350,12 +2350,12 @@
                 <div id="createProjectStepDetails" class="active">
                   <!-- Form Group -->
                   <div class="form-group">
-                    <label class="input-label">Project logo</label>
+                    <label class="input-label">Logo dossier</label>
 
                     <div class="d-flex align-items-center">
                       <!-- Avatar -->
                       <label class="avatar avatar-xl avatar-circle avatar-uploader mr-5" for="avatarNewProjectUploader">
-                        <img id="avatarNewProjectImg" class="avatar-img" src="assets/img/160x160/img2.jpg" alt="Image Description">
+                        <img id="avatarNewProjectImg" class="avatar-img" src="{{ asset('img/160x160/img2.jpg') }}" alt="Image Description">
 
                         <input type="file" class="js-file-attach avatar-uploader-input" id="avatarNewProjectUploader"
                                data-hs-file-attach-options='{
@@ -2363,7 +2363,7 @@
                                   "mode": "image",
                                   "targetAttr": "src",
                                   "resetTarget": ".js-file-attach-reset-img",
-                                  "resetImg": "./assets/img/160x160/img1.jpg"
+                                  "resetImg": "./{{ asset('img/160x160/img1.jpg') }}"
                                }'>
 
                         <span class="avatar-uploader-trigger">
@@ -2389,41 +2389,41 @@
                               <i class="tio-account-square-outlined"></i>
                             </div>
                           </div>
-                          <input class="js-tagify-avatars tagify-form-control form-control" id="clientNewProjectLabel" placeholder="Add creater name" aria-label="Add creater name"
+                          <input class="js-tagify-avatars tagify-form-control form-control" id="clientNewProjectLabel" placeholder="Ajouter un client Existant" aria-label="Add creater name"
                                  data-hs-tagify-options='{
                                    "delimiters": null,
                                    "enforceWhitelist": true,
                                    "whitelist": [
                                      {
                                        "value": "Htmlstream",
-                                       "src": "./assets/svg/brands/htmlstream.svg"
+                                       "src": "./{{ asset("svg/brands/htmlstream.svg") }}"
                                      },{
                                        "value": "Digitalocean",
-                                       "src": "./assets/svg/brands/digitalocean.svg"
+                                       "src": "./{{ asset("svg/brands/digitalocean.svg") }}"
                                      }, {
                                        "value": "Google",
-                                       "src": "./assets/svg/brands/google.svg"
+                                       "src": "./{{ asset("svg/brands/google.svg") }}"
                                      }, {
                                        "value": "Mailchimp",
-                                       "src": "./assets/svg/brands/mailchimp.svg"
+                                       "src": "./{{ asset("svg/brands/mailchimp.svg") }}"
                                      }, {
                                        "value": "Prosperops",
-                                       "src": "./assets/svg/brands/prosperops.svg"
+                                       "src": "./{{ asset("svg/brands/prosperops.svg") }}"
                                      }, {
                                        "value": "Spec",
-                                       "src": "./assets/svg/brands/spec.svg"
+                                       "src": "./{{ asset("svg/brands/spec.svg") }}"
                                      }, {
                                        "value": "Spotify",
-                                       "src": "./assets/svg/brands/spotify.svg"
+                                       "src": "./{{ asset("svg/brands/spotify.svg") }}"
                                      }, {
                                        "value": "Frontapp",
-                                       "src": "./assets/svg/brands/frontapp.svg"
+                                       "src": "./{{ asset("svg/brands/frontapp.svg") }}"
                                      }, {
                                        "value": "Figma",
-                                       "src": "./assets/svg/brands/figma.svg"
+                                       "src": "./{{ asset("svg/brands/figma.svg") }}"
                                      }, {
                                        "value": "Bookingcom",
-                                       "src": "./assets/svg/brands/bookingcom.svg"
+                                       "src": "./{{ asset("svg/brands/bookingcom.svg") }}"
                                      }
                                    ],
                                    "dropdown": {
@@ -2434,11 +2434,11 @@
                         </div>
                       </div>
 
-                      <span class="col-auto mb-3">or</span>
+                      <span class="col-auto mb-3">ou</span>
 
                       <div class="col-md mb-md-3">
                         <a class="btn btn-white" href="javascript:;">
-                          <i class="tio-add mr-1"></i>New client
+                          <i class="tio-add mr-1"></i>Nouveau client
                         </a>
                       </div>
                     </div>
@@ -2447,7 +2447,7 @@
 
                   <!-- Form Group -->
                   <div class="form-group">
-                    <label for="projectNameNewProjectLabel" class="input-label">Project name <i class="tio-help-outlined text-body ml-1" data-toggle="tooltip" data-placement="top" title="Displayed on public forums, such as Front."></i></label>
+                    <label for="projectNameNewProjectLabel" class="input-label">Nom du Dossier <i class="tio-help-outlined text-body ml-1" data-toggle="tooltip" data-placement="top" title="Displayed on public forums, such as Front."></i></label>
 
                     <div class="input-group input-group-merge">
                       <div class="input-group-prepend">
@@ -2455,14 +2455,14 @@
                           <i class="tio-briefcase-outlined"></i>
                         </div>
                       </div>
-                      <input type="text" class="form-control" name="projectName" id="projectNameNewProjectLabel" placeholder="Enter project name here" aria-label="Enter project name here">
+                      <input type="text" class="form-control" name="projectName" id="projectNameNewProjectLabel" placeholder="Entrer le nom du projet ici" aria-label="Enter project name here">
                     </div>
                   </div>
                   <!-- End Form Group -->
 
                   <!-- Quill -->
                   <div class="form-group">
-                    <label class="input-label">Project description <span class="input-label-secondary">(Optional)</span></label>
+                    <label class="input-label">Description du Dossier <span class="input-label-secondary">(Optional)</span></label>
 
                     <!-- Quill -->
                     <div class="quill-custom mb-3 mb-lg-7">
@@ -2500,7 +2500,7 @@
 
                       <div class="js-quill" style="min-height: 15rem;"
                            data-hs-quill-options='{
-                              "placeholder": "Type your message...",
+                              "placeholder": "Ecrire votre message...",
                               "toolbarBottom": true,
                               "attach": "#newProjectModal",
                               "modules": {
@@ -2517,7 +2517,7 @@
                     <div class="col-sm-6">
                       <!-- Form Group -->
                       <div class="form-group">
-                        <label for="projectDeadlineFlatpickrNewProjectLabel" class="input-label">Due date</label>
+                        <label for="projectDeadlineFlatpickrNewProjectLabel" class="input-label">Date création</label>
 
                         <div id="projectDeadlineNewProjectFlatpickr" class="js-flatpickr flatpickr-custom input-group input-group-merge"
                              data-hs-flatpickr-options='{
@@ -2540,20 +2540,21 @@
                     <div class="col-sm-6">
                       <!-- Form Group -->
                       <div class="form-group">
-                        <label for="ownerNewProjectLabel" class="input-label">Owner</label>
+                        <label for="ownerNewProjectLabel" class="input-label">Avocat principal en charge</label>
 
-                        <!-- Select -->
-                        <div class="select2-custom">
-                          <select class="js-select2-custom" id="ownerNewProjectLabel"
-                                  data-hs-select2-options='{
-                                    "minimumResultsForSearch": "Infinity"
-                                  }'>
-                            <option value="owner1" data-option-template='<span class="media align-items-center"><img class="avatar avatar-xss avatar-circle mr-2" src="assets/img/160x160/img6.jpg" alt="Avatar" /><span class="media-body">Mark Williams</span></span>'>Mark Williams</option>
-                            <option value="owner2" data-option-template='<span class="media align-items-center"><img class="avatar avatar-xss avatar-circle mr-2" src="assets/img/160x160/img10.jpg" alt="Avatar" /><span class="media-body">Amanda Harvey</span></span>'>Amanda Harvey</option>
-                            <option value="owner3" selected data-option-template='<span class="media align-items-center"><i class="tio-user-outlined text-body mr-2"></i><span class="media-body">Assign to owner</span></span>'>Assign to owner</option>
-                          </select>
-                         </div>
-                        <!-- End Select -->
+                        <!-- Form Group -->
+                        <div class="form-group">
+                          <div class="input-group input-group-merge">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">
+                                <i class="tio-dollar-outlined"></i>
+                              </div>
+                            </div>
+                            <input type="text" class="form-control" name="expectedValue" id="expectedValueNewProjectLabel" placeholder="Enter value here" aria-label="Entrer la valeur ici">
+                          </div>
+                        </div>
+                        <!-- End Form Group -->
+
                       </div>
                       <!-- End Form Group -->
                     </div>
@@ -2562,12 +2563,12 @@
 
                   <!-- Form Group -->
                   <div class="form-group">
-                    <label class="input-label">Attach files</label>
+                    <label class="input-label">Fichier attachés</label>
 
                     <!-- Dropzone -->
                     <div id="attachFilesNewProjectLabel" class="js-dropzone dropzone-custom custom-file-boxed">
                       <div class="dz-message custom-file-boxed-label">
-                        <img class="avatar avatar-xl avatar-4by3 mb-3" src="assets/svg/illustrations/browse.svg" alt="Image Description">
+                        <img class="avatar avatar-xl avatar-4by3 mb-3" src="{{ asset('svg/illustrations/browse.svg') }}" alt="Image Description">
                         <h5 class="mb-1">Choose files to upload</h5>
                         <p class="mb-2">or</p>
                         <span class="btn btn-sm btn-primary">Browse files</span>
@@ -2577,59 +2578,6 @@
                   </div>
                   <!-- End Form Group -->
 
-                  <label class="input-label">Default view</label>
-
-                  <div class="form-row mb-3">
-                    <div class="col-sm mb-2 mb-sm-0">
-                      <!-- Custom Radio -->
-                      <div class="form-control">
-                        <div class="custom-control custom-radio custom-radio-reverse">
-                          <input type="radio" class="custom-control-input" name="projectViewNewProjectTypeRadio" id="projectViewNewProjectTypeRadio1">
-                          <label class="custom-control-label media align-items-center" for="projectViewNewProjectTypeRadio1">
-                            <i class="tio-agenda-view-outlined text-muted mr-2"></i>
-                            <span class="media-body">
-                              List
-                            </span>
-                          </label>
-                        </div>
-                      </div>
-                      <!-- End Custom Radio -->
-                    </div>
-
-                    <div class="col-sm mb-2 mb-sm-0">
-                      <!-- Custom Radio -->
-                      <div class="form-control">
-                        <div class="custom-control custom-radio custom-radio-reverse">
-                          <input type="radio" class="custom-control-input" name="projectViewNewProjectTypeRadio" id="projectViewNewProjectTypeRadio2" checked>
-                          <label class="custom-control-label media align-items-center" for="projectViewNewProjectTypeRadio2">
-                            <i class="tio-table text-muted mr-2"></i>
-                            <span class="media-body">
-                              Table
-                            </span>
-                          </label>
-                        </div>
-                      </div>
-                      <!-- End Custom Radio -->
-                    </div>
-
-                    <div class="col-sm mb-2 mb-sm-0">
-                      <!-- Custom Radio -->
-                      <div class="form-control">
-                        <div class="custom-control custom-radio custom-radio-reverse">
-                          <input type="radio" class="custom-control-input" name="projectViewNewProjectTypeRadio" id="projectViewNewProjectTypeRadio3" disabled>
-                          <label class="custom-control-label media align-items-center" for="projectViewNewProjectTypeRadio3">
-                            <i class="tio-align-to-center-outlined text-muted mr-2"></i>
-                            <span class="media-body">
-                              Timeline
-                            </span>
-                          </label>
-                        </div>
-                      </div>
-
-                      <span class="badge badge-soft-primary badge-pill mt-2">Coming soon...</span>
-                      <!-- End Custom Radio -->
-                    </div>
-                  </div>
                   <!-- End Row -->
 
                   <!-- Footer -->
@@ -2639,7 +2587,7 @@
                               data-hs-step-form-next-options='{
                                 "targetSelector": "#createProjectStepTerms"
                               }'>
-                        Next <i class="tio-chevron-right"></i>
+                        Suivant <i class="tio-chevron-right"></i>
                       </button>
                     </div>
                   </div>
@@ -2652,7 +2600,7 @@
                     <div class="col-sm-6">
                       <!-- Form Group -->
                       <div class="form-group">
-                        <label for="paymentTermsNewProjectLabel" class="input-label">Terms</label>
+                        <label for="paymentTermsNewProjectLabel" class="input-label">Termes</label>
 
                         <!-- Select -->
                         <div class="select2-custom">
@@ -2660,9 +2608,9 @@
                                   data-hs-select2-options='{
                                     "minimumResultsForSearch": "Infinity"
                                   }'>
-                            <option value="fixed" selected>Fixed</option>
-                            <option value="Per hour">Per hour</option>
-                            <option value="Per day">Per day</option>
+                            <option value="fixed" selected>Fixe</option>
+                            <option value="Per hour">Selon le nombre de Jour</option>
+                            <option value="Per day">Barème</option>
                             <option value="Per week">Per week</option>
                             <option value="Per month">Per month</option>
                             <option value="Per quarter">Per quarter</option>
@@ -2675,7 +2623,7 @@
                     </div>
 
                     <div class="col-sm-6">
-                      <label for="expectedValueNewProjectLabel" class="input-label">Expected value</label>
+                      <label for="expectedValueNewProjectLabel" class="input-label">Montatnt</label>
 
                       <!-- Form Group -->
                       <div class="form-group">
@@ -2685,7 +2633,7 @@
                               <i class="tio-dollar-outlined"></i>
                             </div>
                           </div>
-                          <input type="text" class="form-control" name="expectedValue" id="expectedValueNewProjectLabel" placeholder="Enter value here" aria-label="Enter value here">
+                          <input type="text" class="form-control" name="expectedValue" id="expectedValueNewProjectLabel" placeholder="Enter value here" aria-label="Entrer la valeur ici">
                         </div>
                       </div>
                       <!-- End Form Group -->
@@ -2698,7 +2646,7 @@
                     <div class="col-lg-6">
                       <!-- Form Group -->
                       <div class="form-group">
-                        <label for="milestoneNewProjectLabel" class="input-label">Milestone <a class="small ml-1" href="javascript:;">Change probability</a></label>
+                        <label for="milestoneNewProjectLabel" class="input-label">Statut <a class="small ml-1" href="javascript:;">Change probability</a></label>
 
                         <!-- Select -->
                         <div class="select2-custom">
@@ -2706,12 +2654,10 @@
                                   data-hs-select2-options='{
                                     "minimumResultsForSearch": "Infinity"
                                   }'>
-                            <option value="New">New</option>
-                            <option value="Qualified">Qualified</option>
-                            <option value="Meeting">Meeting</option>
-                            <option value="Proposal">Proposal</option>
-                            <option value="Negotiation">Negotiation</option>
-                            <option value="Contact">Contact</option>
+                            <option value="New">A faire</option>
+                            <option value="Qualified">En cours</option>
+                            <option value="Meeting">Cloturé</option>
+                            
                           </select>
                          </div>
                         <!-- End Select -->
@@ -2770,7 +2716,7 @@
                               data-hs-step-form-next-options='{
                                 "targetSelector": "#createProjectStepMembers"
                               }'>
-                        Next <i class="tio-chevron-right"></i>
+                        Suivant <i class="tio-chevron-right"></i>
                       </button>
                     </div>
                   </div>
@@ -2861,7 +2807,7 @@
                     <li>
                       <div class="media">
                         <div class="avatar avatar-sm avatar-circle mr-3">
-                          <img class="avatar-img" src="assets/img/160x160/img3.jpg" alt="Image Description">
+                          <img class="avatar-img" src="{{ asset('img/160x160/img3.jpg') }}" alt="Image Description">
                         </div>
 
                         <div class="media-body">
@@ -2902,7 +2848,7 @@
                     <li>
                       <div class="media">
                         <div class="avatar avatar-sm avatar-circle mr-3">
-                          <img class="avatar-img" src="assets/img/160x160/img9.jpg" alt="Image Description">
+                          <img class="avatar-img" src="{{ asset('img/160x160/img9.jpg') }}" alt="Image Description">
                         </div>
 
                         <div class="media-body">
@@ -3025,8 +2971,8 @@
                     </button>
 
                     <div class="d-flex justify-content-end ml-auto">
-                      <button type="button" class="btn btn-white mr-2" data-dismiss="modal" aria-label="Close">Cancel</button>
-                      <button id="createProjectFinishBtn" type="button" class="btn btn-primary">Create project</button>
+                      <button type="button" class="btn btn-white mr-2" data-dismiss="modal" aria-label="Close">Annuler</button>
+                      <button id="createProjectFinishBtn" type="button" class="btn btn-primary">Créer le dossier</button>
                     </div>
                   </div>
                   <!-- End Footer -->
@@ -3037,23 +2983,23 @@
               <!-- Message Body -->
               <div id="createProjectStepSuccessMessage" style="display:none;">
                 <div class="text-center">
-                  <img class="img-fluid mb-3" src="assets/svg/illustrations/create.svg" alt="Image Description" style="max-width: 15rem;">
+                  <img class="img-fluid mb-3" src="{{ asset('svg/illustrations/create.svg') }}" alt="Image Description" style="max-width: 15rem;">
 
                   <div class="mb-4">
                     <h2>Successful!</h2>
-                    <p>New project has been successfully created.</p>
+                    <p>Nouveau Dossier créé avec success</p>
                   </div>
 
                   <div class="row justify-content-center gy-1 gx-2">
                     <div class="col-auto">
-                      <a class="btn btn-white" href="projects.php">
-                        <i class="tio-chevron-left ml-1"></i> Back to projects
+                      <a class="btn btn-white" href="{{  route('dossier') }}">
+                        <i class="tio-chevron-left ml-1"></i> Retour sur Dossier
                       </a>
                     </div>
 
                     <div class="col-auto">
                       <a class="btn btn-primary" href="javascript:;" data-toggle="modal" data-target="#newProjectModal">
-                        <i class="tio-city mr-1"></i> Add new project
+                        <i class="tio-city mr-1"></i> Ajouter un nouveau dossier
                       </a>
                     </div>
                   </div>
@@ -3231,7 +3177,7 @@
           },
           language: {
             zeroRecords: '<div class="text-center p-4">' +
-                '<img class="mb-3" src="./{{ asset("svg/illustrations/sorry.svg") }}" alt="Image Description" style="width: 7rem;">' +
+                '<img class="mb-3" src="./{{ asset("svg/illustrations/sorry.svg") }}") }}" alt="Image Description" style="width: 7rem;">' +
                 '<p class="mb-0">No data to show</p>' +
                 '</div>'
           }

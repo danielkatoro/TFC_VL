@@ -15,6 +15,13 @@ class CreateTableDossier extends Migration
     {
         Schema::create('table_dossier', function (Blueprint $table) {
             $table->id();
+            $table->string('nomClient');
+            $table->string('nomDossier');
+            $table->text('descriprion');
+            $table->string('statut');
+            $table->string('termes');
+            $table->float('montant');
+            $table->string('adversaire');
             $table->timestamps();
         });
     }
