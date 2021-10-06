@@ -907,7 +907,7 @@
                  "type": "css-animation"
                }'>
               <div class="avatar avatar-sm avatar-circle">
-                <img class="avatar-img" src="{{ asset('img/160x160/img6.jpg') }}" alt="Image Description">
+                <img class="avatar-img" src="{{ asset('img/dann.jpg') }}" alt="Image Description">
                 <span class="avatar-status avatar-sm-status avatar-status-success"></span>
               </div>
             </a>
@@ -916,7 +916,7 @@
               <div class="dropdown-item">
                 <div class="media align-items-center">
                   <div class="avatar avatar-sm avatar-circle mr-2">
-                    <img class="avatar-img" src="{{ asset('img/160x160/img6.jpg') }}" alt="Image Description">
+                    <img class="avatar-img" src="{{ asset('img/dann.jpg') }}" alt="Image Description">
                   </div>
                   <div class="media-body">
                     <span class="card-title h5">Mark Williams</span>
@@ -1537,7 +1537,7 @@
                  "type": "css-animation"
                }'>
               <div class="avatar avatar-sm avatar-circle">
-                <img class="avatar-img" src="{{ asset('img/160x160/img6.jpg') }}" alt="Image Description">
+                <img class="avatar-img" src="{{ asset('img/dann.jpg') }}" alt="Image Description">
                 <span class="avatar-status avatar-sm-status avatar-status-success"></span>
               </div>
             </a>
@@ -1546,7 +1546,7 @@
               <div class="dropdown-item">
                 <div class="media align-items-center">
                   <div class="avatar avatar-sm avatar-circle mr-2">
-                    <img class="avatar-img" src="{{ asset('img/160x160/img6.jpg') }}" alt="Image Description">
+                    <img class="avatar-img" src="{{ asset('img/dann.jpg') }}" alt="Image Description">
                   </div>
                   <div class="media-body">
                     <span class="card-title h5">Mark Williams</span>
@@ -2407,7 +2407,7 @@
                      "type": "css-animation"
                    }'>
                   <div class="avatar avatar-sm avatar-circle">
-                    <img class="avatar-img" src="{{ asset('img/160x160/img6.jpg') }}" alt="Image Description">
+                    <img class="avatar-img" src="{{ asset('img/dann.jpg') }}" alt="Image Description">
                     <span class="avatar-status avatar-sm-status avatar-status-success"></span>
                   </div>
                 </a>
@@ -2416,7 +2416,7 @@
                   <div class="dropdown-item">
                     <div class="media align-items-center">
                       <div class="avatar avatar-sm avatar-circle mr-2">
-                        <img class="avatar-img" src="{{ asset('img/160x160/img6.jpg') }}" alt="Image Description">
+                        <img class="avatar-img" src="{{ asset('img/dann.jpg') }}" alt="Image Description">
                       </div>
                       <div class="media-body">
                         <span class="card-title h5">Mark Williams</span>
@@ -4078,7 +4078,7 @@
                     }'>
                     <span class="step-icon step-icon-soft-dark">2</span>
                     <div class="step-content">
-                      <span class="step-title">Billing address</span>
+                      <span class="step-title">Addresses</span>
                     </div>
                   </a>
                 </li>
@@ -4136,7 +4136,7 @@
 
                     <!-- Form Group -->
                     <div class="row form-group">
-                      <label for="firstNameLabel" class="col-sm-3 col-form-label input-label">Full name <i class="tio-help-outlined text-body ml-1" data-toggle="tooltip" data-placement="top" title="Displayed on public forums, such as Front."></i></label>
+                      <label for="firstNameLabel" class="col-sm-3 col-form-label input-label">Nom complet <i class="tio-help-outlined text-body ml-1" data-toggle="tooltip" data-placement="top" title="Displayed on public forums, such as Front."></i></label>
 
                       <div class="col-sm-9">
                         <div class="input-group input-group-sm-down-break">
@@ -4197,7 +4197,7 @@
                         <div id="addPhoneFieldContainer"></div>
 
                         <a href="javascript:;" class="js-create-field form-link btn btn-sm btn-no-focus btn-ghost-primary">
-                          <i class="tio-add"></i> Add phone
+                          <i class="tio-add"></i> Ajouter un numero de telephone
                         </a>
                       </div>
                     </div>
@@ -4251,10 +4251,10 @@
 
                     <!-- Form Group -->
                     <div class="row form-group">
-                      <label for="organizationLabel" class="col-sm-3 col-form-label input-label">Organization</label>
+                      <label for="organizationLabel" class="col-sm-3 col-form-label input-label">Organisation</label>
 
                       <div class="col-sm-9">
-                        <input type="text" class="form-control" name="organization" id="organizationLabel" placeholder="Htmlstream" aria-label="Htmlstream">
+                        <input type="text" class="form-control" name="organization" id="organizationLabel" placeholder="EHULA TECHNOLOGIE" aria-label="Htmlstream">
                       </div>
                     </div>
                     <!-- End Form Group -->
@@ -4271,7 +4271,7 @@
 
                     <!-- Form Group -->
                     <div class="row">
-                      <label class="col-sm-3 col-form-label input-label">Account type</label>
+                      <label class="col-sm-3 col-form-label input-label">Type de compte</label>
 
                       <div class="col-sm-9">
                         <div class="input-group input-group-sm-down-break">
@@ -4279,7 +4279,7 @@
                           <div class="form-control">
                             <div class="custom-control custom-radio">
                               <input type="radio" class="custom-control-input" name="userAccountTypeRadio" id="userAccountTypeRadio1">
-                              <label class="custom-control-label" for="userAccountTypeRadio1">Individual</label>
+                              <label class="custom-control-label" for="userAccountTypeRadio1">Individuel</label>
                             </div>
                           </div>
                           <!-- End Custom Radio -->
@@ -4288,7 +4288,7 @@
                           <div class="form-control">
                             <div class="custom-control custom-radio">
                               <input type="radio" class="custom-control-input" name="userAccountTypeRadio" id="userAccountTypeRadio2">
-                              <label class="custom-control-label" for="userAccountTypeRadio2">Company</label>
+                              <label class="custom-control-label" for="userAccountTypeRadio2">Compagnie</label>
                             </div>
                           </div>
                           <!-- End Custom Radio -->
@@ -4305,7 +4305,7 @@
                             data-hs-step-form-next-options='{
                               "targetSelector": "#addUserStepBillingAddress"
                             }'>
-                      Next <i class="tio-chevron-right"></i>
+                      Suivant <i class="tio-chevron-right"></i>
                     </button>
                   </div>
                   <!-- End Footer -->
