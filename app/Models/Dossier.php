@@ -8,4 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Dossier extends Model
 {
     use HasFactory;
+    protected $fillable = [
+        'nomClient','nomDossier','descriprion','statut','termes','montant','adversaire'
+    ];
 }

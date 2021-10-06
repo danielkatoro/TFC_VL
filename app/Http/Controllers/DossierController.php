@@ -14,7 +14,10 @@ class DossierController extends Controller
      */
     public function index()
     {
-        //
+        
+
+        return view('layouts.dossier');
+            
     }
 
     /**

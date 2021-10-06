@@ -367,13 +367,13 @@
                     </div>
                   </th>
                   <th class="table-column-pl-0">Dossier</th>
-                  <th>Tasks</th>
-                  <th>Members</th>
+                  <th>Clients</th>
+                  <th>Avocat en charge</th>
                   <th>Status</th>
-                  <th>Completion</th>
+                  <th>Adversaire</th>
                   <th><i class="tio-attachment-diagonal"></i></th>
                   <th><i class="tio-chat-outlined"></i></th>
-                  <th>Due date</th>
+                  <th>Date Création</th>
                 </tr>
               </thead>
 
@@ -390,7 +390,7 @@
                       <img class="avatar" src="{{ asset('svg/brands/guideline.svg') }}" alt="Image Description">
                       <div class="ml-3">
                         <span class="d-block h5 text-hover-primary mb-0">Cloud computing web service</span>
-                        <span class="d-block font-size-sm text-body">Updated 2 minutes ago</span>
+                        <!-- <span class="d-block font-size-sm text-body">Updated 2 minutes ago</span> -->
                       </div>
                     </a>
                   </td>
@@ -458,7 +458,7 @@
                       </div>
                       <div class="ml-3">
                         <span class="d-block h5 text-hover-primary mb-0">Improve profile UX <i class="tio-verified text-primary" data-toggle="tooltip" data-placement="top" title="Earned extra bonus"></i></span>
-                        <span class="d-block font-size-sm text-body">Updated 4 hours ago</span>
+                        <!-- <span class="d-block font-size-sm text-body">Updated 4 hours ago</span> -->
                       </div>
                     </a>
                   </td>
@@ -496,7 +496,7 @@
                       <img class="avatar" src="{{ asset('svg/brands/capsule.svg') }}" alt="Image Description">
                       <div class="ml-3">
                         <span class="d-block h5 text-hover-primary mb-0">Build stronger customer relationships</span>
-                        <span class="d-block font-size-sm text-body">Updated 1 months ago</span>
+                        <!-- <span class="d-block font-size-sm text-body">Updated 1 months ago</span> -->
                       </div>
                     </a>
                   </td>
@@ -550,7 +550,7 @@
                       </div>
                       <div class="ml-3">
                         <span class="d-block h5 text-hover-primary mb-0">Update social banners</span>
-                        <span class="d-block font-size-sm text-body">Updated 1 week ago</span>
+                        <!-- <span class="d-block font-size-sm text-body">Updated 1 week ago</span> -->
                       </div>
                     </a>
                   </td>
@@ -609,7 +609,7 @@
                       <img class="avatar" src="{{ asset('svg/brands/mailchimp.svg') }}" alt="Image Description">
                       <div class="ml-3">
                         <span class="d-block h5 text-hover-primary mb-0">Update subscription method <i class="tio-verified text-primary" data-toggle="tooltip" data-placement="top" title="Earned extra bonus"></i></span>
-                        <span class="d-block font-size-sm text-body">Updated 2 hours ago</span>
+                        <!-- <span class="d-block font-size-sm text-body">Updated 2 hours ago</span> -->
                       </div>
                     </a>
                   </td>
@@ -663,7 +663,7 @@
                       </div>
                       <div class="ml-3">
                         <span class="d-block h5 text-hover-primary mb-0">Extend Spotify mobile app features</span>
-                        <span class="d-block font-size-sm text-body">Updated 1 day ago</span>
+                        <!-- <span class="d-block font-size-sm text-body">Updated 1 day ago</span> -->
                       </div>
                     </a>
                   </td>
@@ -722,7 +722,7 @@
                       <img class="avatar" src="{{ asset('svg/brands/spec.svg') }}" alt="Image Description">
                       <div class="ml-3">
                         <span class="d-block h5 text-hover-primary mb-0">Install Front pay</span>
-                        <span class="d-block font-size-sm text-body">Updated 23 hours ago</span>
+                        <!-- <span class="d-block font-size-sm text-body">Updated 23 hours ago</span> -->
                       </div>
                     </a>
                   </td>
@@ -766,7 +766,7 @@
                       </div>
                       <div class="ml-3">
                         <span class="d-block h5 text-hover-primary mb-0">Binance-chain <i class="tio-verified text-primary" data-toggle="tooltip" data-placement="top" title="Earned extra bonus"></i></span>
-                        <span class="d-block font-size-sm text-body">Updated 14 hours ago</span>
+                        <!-- <span class="d-block font-size-sm text-body">Updated 14 hours ago</span> -->
                       </div>
                     </a>
                   </td>
@@ -821,7 +821,7 @@
                       <img class="avatar" src="{{ asset('svg/brands/jira.svg') }}" alt="Image Description">
                       <div class="ml-3">
                         <span class="d-block h5 text-hover-primary mb-0">Develop Slack mobile app</span>
-                        <span class="d-block font-size-sm text-body">Updated 18 minutes ago</span>
+                        <!-- <span class="d-block font-size-sm text-body">Updated 18 minutes ago</span> -->
                       </div>
                     </a>
                   </td>
@@ -878,7 +878,7 @@
                       </div>
                       <div class="ml-3">
                         <span class="d-block h5 text-hover-primary mb-0">Get a complete store audit</span>
-                        <span class="d-block font-size-sm text-body">Updated 2 weeks ago</span>
+                        <!-- <span class="d-block font-size-sm text-body">Updated 2 weeks ago</span> -->
                       </div>
                     </a>
                   </td>
@@ -941,7 +941,7 @@
                       <img class="avatar" src="{{ asset('svg/brands/figma.svg') }}" alt="Image Description">
                       <div class="ml-3">
                         <span class="d-block h5 text-hover-primary mb-0">Create a new theme <i class="tio-verified text-primary" data-toggle="tooltip" data-placement="top" title="Earned extra bonus"></i></span>
-                        <span class="d-block font-size-sm text-body">Updated 5 days ago</span>
+                        <!-- <span class="d-block font-size-sm text-body">Updated 5 days ago</span> -->
                       </div>
                     </a>
                   </td>
@@ -979,7 +979,7 @@
                       <img class="avatar" src="{{ asset('svg/brands/google-webdev.svg') }}" alt="Image Description">
                       <div class="ml-3">
                         <span class="d-block h5 text-hover-primary mb-0">Create a new database for Webdev</span>
-                        <span class="d-block font-size-sm text-body">Updated 2 hours ago</span>
+                        <!-- <span class="d-block font-size-sm text-body">Updated 2 hours ago</span> -->
                       </div>
                     </a>
                   </td>
@@ -1040,7 +1040,7 @@
                       </div>
                       <div class="ml-3">
                         <span class="d-block h5 text-hover-primary mb-0">Marketing &amp; Communications</span>
-                        <span class="d-block font-size-sm text-body">Updated 2 months ago</span>
+                        <!-- <span class="d-block font-size-sm text-body">Updated 2 months ago</span> -->
                       </div>
                     </a>
                   </td>
@@ -1100,7 +1100,7 @@
                       <img class="avatar" src="{{ asset('svg/brands/bookingcom.svg') }}" alt="Image Description">
                       <div class="ml-3">
                         <span class="d-block h5 text-hover-primary mb-0">Set up a datatable for Booking.com</span>
-                        <span class="d-block font-size-sm text-body">Updated 13 days ago</span>
+                        <!-- <span class="d-block font-size-sm text-body">Updated 13 days ago</span> -->
                       </div>
                     </a>
                   </td>
@@ -1140,7 +1140,7 @@
                       </div>
                       <div class="ml-3">
                         <span class="d-block h5 text-hover-primary mb-0">Create a new marketing campaign</span>
-                        <span class="d-block font-size-sm text-body">Updated 1 day ago</span>
+                        <!-- <span class="d-block font-size-sm text-body">Updated 1 day ago</span> -->
                       </div>
                     </a>
                   </td>
@@ -1192,7 +1192,7 @@
                       <img class="avatar" src="{{ asset('svg/brands/prosperops.svg') }}" alt="Image Description">
                       <div class="ml-3">
                         <span class="d-block h5 text-hover-primary mb-0">Prosperops</span>
-                        <span class="d-block font-size-sm text-body">Updated 1 hour ago</span>
+                        <!-- <span class="d-block font-size-sm text-body">Updated 1 hour ago</span> -->
                       </div>
                     </a>
                   </td>
@@ -1232,7 +1232,7 @@
                       </div>
                       <div class="ml-3">
                         <span class="d-block h5 text-hover-primary mb-0">Increase productivity with reviews</span>
-                        <span class="d-block font-size-sm text-body">Updated 30 minutes ago</span>
+                        <!-- <span class="d-block font-size-sm text-body">Updated 30 minutes ago</span> -->
                       </div>
                     </a>
                   </td>
@@ -1274,7 +1274,7 @@
                       <img class="avatar" src="{{ asset('svg/brands/spotify.svg') }}" alt="Image Description">
                       <div class="ml-3">
                         <span class="d-block h5 text-hover-primary mb-0">Redesigning the Spotify main page</span>
-                        <span class="d-block font-size-sm text-body">Updated 27 minutes ago</span>
+                        <!-- <span class="d-block font-size-sm text-body">Updated 27 minutes ago</span> -->
                       </div>
                     </a>
                   </td>
@@ -1331,7 +1331,7 @@
                       </div>
                       <div class="ml-3">
                         <span class="d-block h5 text-hover-primary mb-0">The Hub Dossier <i class="tio-verified text-primary" data-toggle="tooltip" data-placement="top" title="Earned extra bonus"></i></span>
-                        <span class="d-block font-size-sm text-body">Updated 9 hours ago</span>
+                        <!-- <span class="d-block font-size-sm text-body">Updated 9 hours ago</span> -->
                       </div>
                     </a>
                   </td>
@@ -1386,7 +1386,7 @@
                       <img class="avatar" src="{{ asset('svg/brands/digitalocean.svg') }}" alt="Image Description">
                       <div class="ml-3">
                         <span class="d-block h5 text-hover-primary mb-0">Working on a new Cloud computing</span>
-                        <span class="d-block font-size-sm text-body">Updated 5 days ago</span>
+                        <!-- <span class="d-block font-size-sm text-body">Updated 5 days ago</span> -->
                       </div>
                     </a>
                   </td>
@@ -1444,7 +1444,7 @@
                       </div>
                       <div class="ml-3">
                         <span class="d-block h5 text-hover-primary mb-0">Launch social network campaign</span>
-                        <span class="d-block font-size-sm text-body">Updated 46 minutes ago</span>
+                        <!-- <span class="d-block font-size-sm text-body">Updated 46 minutes ago</span> -->
                       </div>
                     </a>
                   </td>
@@ -1486,7 +1486,7 @@
                       <img class="avatar" src="{{ asset('svg/brands/atlassian.svg') }}" alt="Image Description">
                       <div class="ml-3">
                         <span class="d-block h5 text-hover-primary mb-0">New software tool</span>
-                        <span class="d-block font-size-sm text-body">Updated 7 minutes ago</span>
+                        <!-- <span class="d-block font-size-sm text-body">Updated 7 minutes ago</span> -->
                       </div>
                     </a>
                   </td>
@@ -1541,7 +1541,7 @@
                       <img class="avatar" src="{{ asset('svg/brands/frontapp.svg') }}" alt="Image Description">
                       <div class="ml-3">
                         <span class="d-block h5 text-hover-primary mb-0">Increase email conversion rating</span>
-                        <span class="d-block font-size-sm text-body">Updated 1 hour ago</span>
+                        <!-- <span class="d-block font-size-sm text-body">Updated 1 hour ago</span> -->
                       </div>
                     </a>
                   </td>
@@ -1606,7 +1606,7 @@
                       </div>
                       <div class="ml-3">
                         <span class="d-block h5 text-hover-primary mb-0">Ethereum Dossier</span>
-                        <span class="d-block font-size-sm text-body">Updated 5 days ago</span>
+                        <!-- <span class="d-block font-size-sm text-body">Updated 5 days ago</span> -->
                       </div>
                     </a>
                   </td>
