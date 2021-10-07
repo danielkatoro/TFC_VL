@@ -24,10 +24,10 @@ class DossierFactory extends Factory
         return [
             'nomClient' => $this->faker->lastName,
             'nomDossier' => $this->faker->name,
-            'descriprion' => $this->faker->text(100),
+            'description' => $this->faker->text(100),
             'statut' => $this->faker->name,
             'termes' => $this->faker->name,
-            'montant' => $this->faker->randomFloat,
+            'montant' => $this->faker->randomFloat(10000.50,10.05,10000.50),
             'adversaire' => $this->faker->name
         ];
        

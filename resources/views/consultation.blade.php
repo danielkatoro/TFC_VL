@@ -123,7 +123,7 @@
                     <form action="{{ Route('consultation_path') }}" method="POST">
                         {{ csrf_field() }}
                         <!-- Contact Start -->
-            <div class="contact">
+                    <div class="contact">
                     <div class="row">
                         <div class="col-md-12 offset-4">
                             <div class="contact-form">
