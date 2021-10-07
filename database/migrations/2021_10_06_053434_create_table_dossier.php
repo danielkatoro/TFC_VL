@@ -13,7 +13,7 @@ class CreateTableDossier extends Migration
      */
     public function up()
     {
-        Schema::create('table_dossier', function (Blueprint $table) {
+        Schema::create('dossiers', function (Blueprint $table) {
             $table->id();
             $table->string('nomClient');
             $table->string('nomDossier');

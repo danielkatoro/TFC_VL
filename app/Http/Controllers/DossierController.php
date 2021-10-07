@@ -15,8 +15,8 @@ class DossierController extends Controller
     public function index()
     {
         
-
-        return view('layouts.dossier');
+        $dossiers= Dossier::all()->toArray();
+        return view('layouts.dossier',compact('dossiers'));
             
     }
 

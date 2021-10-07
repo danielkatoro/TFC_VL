@@ -377,6 +377,17 @@
                 </tr>
               </thead>
 
+              @foreach($dossiers as $row)
+              <tr>
+                <td>{{ $row['nomClient'] }}</td>
+                <td>{{ $row['nomDossier'] }}</td>
+                <td>{{ $row['description'] }}</td>
+                <td>{{ $row['statut'] }}</td>
+                <td>{{ $row['termes'] }}</td>
+                <td>{{ $row['created_at'] }}</td>
+              </tr>
+              @endforeach
+
               <tbody>
                 <tr>
                   <td class="table-column-pr-0">
