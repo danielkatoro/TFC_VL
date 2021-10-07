@@ -22,7 +22,14 @@ class DossierFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'nomClient' => $this->faker->lastName,
+            'nomDossier' => $this->faker->name,
+            'descriprion' => $this->faker->text(100),
+            'statut' => $this->faker->name,
+            'termes' => $this->faker->name,
+            'montant' => $this->faker->randomFloat,
+            'adversaire' => $this->faker->name
         ];
+       
     }
 }
