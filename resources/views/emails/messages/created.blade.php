@@ -12,7 +12,7 @@ Contenu du Message :
 @endcomponent
 
 
-@component('mail::button', ['url' => '{{route("register") }}'])
+@component('mail::button', ['url' => '/register'])
 Créer un compte pour {{$msg->name}}
 @endcomponent
 

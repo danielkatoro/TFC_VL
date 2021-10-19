@@ -4048,13 +4048,14 @@
       <!-- Content -->
       <div class="content container-fluid">
         <!-- Step Form -->
-        <form class="js-step-form py-md-5"
+        <form method="POST" action="{{ route('register') }}" class="js-step-form py-md-5"
               data-hs-step-form-options='{
                 "progressSelector": "#addUserStepFormProgress",
                 "stepsSelector": "#addUserStepFormContent",
                 "endSelector": "#addUserFinishBtn",
                 "isValidate": false
               }'>
+              @csrf
           <div class="row justify-content-lg-center">
             <div class="col-lg-8">
               <!-- Step -->
@@ -4136,12 +4137,23 @@
 
                     <!-- Form Group -->
                     <div class="row form-group">
-                      <label for="firstNameLabel" class="col-sm-3 col-form-label input-label">Nom complet <i class="tio-help-outlined text-body ml-1" data-toggle="tooltip" data-placement="top" title="Displayed on public forums, such as Front."></i></label>
+                      <label for="name" class="col-sm-3 col-form-label input-label">Nom complet <i class="tio-help-outlined text-body ml-1" data-toggle="tooltip" data-placement="top" title="Displayed on public forums, such as Front."></i></label>
 
                       <div class="col-sm-9">
                         <div class="input-group input-group-sm-down-break">
-                          <input type="text" class="form-control" name="firstName" id="firstNameLabel" placeholder="Clarice" aria-label="Clarice">
-                          <input type="text" class="form-control" name="lastName" id="lastNameLabel" placeholder="Boone" aria-label="Boone">
+                           
+                          <input type="text" class="form-control @error('name') is-invalid @enderror" value="{{ old('name') }}" name="name" id="name" required autocomplete="name" autofocus placeholder="Daniel" aria-label="Daniel">
+                                @error('name')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                          <input type="text" class="form-control @error('lastname') is-invalid @enderror" value="{{ old('lastname') }}" name="lastname" id="lastname" required autocomplete="lastname" autofocus placeholder="Katoro" aria-label="Katoro">
+                                @error('lastname')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
                         </div>
                       </div>
                     </div>
@@ -4149,10 +4161,16 @@
 
                     <!-- Form Group -->
                     <div class="row form-group">
-                      <label for="emailLabel" class="col-sm-3 col-form-label input-label">Email</label>
+                      <label for="email" class="col-sm-3 col-form-label input-label">Email</label>
 
                       <div class="col-sm-9">
-                        <input type="email" class="form-control" name="email" id="emailLabel" placeholder="clarice@example.com" aria-label="clarice@example.com">
+                        <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" placeholder="danielkatoro@example.com" aria-label="danielkatoro@example.com">
+                        @error('email')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
+
                       </div>
                     </div>
                     <!-- End Form Group -->
@@ -4164,14 +4182,20 @@
                             "container": "#addPhoneFieldContainer",
                             "defaultCreated": 0
                           }'>
-                      <label for="phoneLabel" class="col-sm-3 col-form-label input-label">Phone <span class="input-label-secondary">(Optional)</span></label>
+                      <label for="phone" class="col-sm-3 col-form-label input-label">Phone <span class="input-label-secondary">(Optional)</span></label>
 
                       <div class="col-sm-9">
                         <div class="input-group input-group-sm-down-break align-items-center">
-                          <input type="text" class="js-masked-input form-control" name="phone" id="phoneLabel" placeholder="+x(xxx)xxx-xx-xx" aria-label="+x(xxx)xxx-xx-xx"
+                          <input type="text" class="js-masked-input form-control @error('phone') is-invalid @enderror" value="{{ old('phone') }}" name="phone" id="phone" required autocomplete="phone" autofocus placeholder="+(xxx)xx-xx-xx" aria-label="+(xxx)xx-xx-xx"
                                  data-hs-mask-options='{
                                    "template": "+0(000)000-00-00"
                                  }'>
+                              
+                                @error('phone')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
 
                           <div class="input-group-append">
                             <!-- Select -->
@@ -4251,20 +4275,30 @@
 
                     <!-- Form Group -->
                     <div class="row form-group">
-                      <label for="organizationLabel" class="col-sm-3 col-form-label input-label">Organisation</label>
+                      <label for="organisation" class="col-sm-3 col-form-label input-label">Organisation</label>
 
                       <div class="col-sm-9">
-                        <input type="text" class="form-control" name="organization" id="organizationLabel" placeholder="EHULA TECHNOLOGIE" aria-label="Htmlstream">
+                        <input type="text" class="form-control @error('organisation') is-invalid @enderror" name="organisation" id="organisation" value="{{ old('organisation') }}" required autocomplete="organisation" autofocus placeholder="EHULA TECHNOLOGIE" aria-label="Htmlstream">
+                        @error('organisation')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
                       </div>
                     </div>
                     <!-- End Form Group -->
 
                     <!-- Form Group -->
                     <div class="row form-group">
-                      <label for="departmentLabel" class="col-sm-3 col-form-label input-label">Department</label>
+                      <label for="departement" class="col-sm-3 col-form-label input-label">Department</label>
 
                       <div class="col-sm-9">
-                        <input type="text" class="form-control" name="department" id="departmentLabel" placeholder="Human resources" aria-label="Human resources">
+                        <input type="text" class="form-control @error('departement') is-invalid @enderror" name="departement" id="departemenet" value="{{ old('departement') }}" required autocomplete="departement" autofocus placeholder="Ressources Humaines" aria-label="Htmlstream">
+                        @error('departement')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
                       </div>
                     </div>
                     <!-- End Form Group -->
@@ -4611,27 +4645,26 @@
                       <label for="addressLine2Label" class="col-sm-3 col-form-label input-label">Address line 2 <span class="input-label-secondary">(Optional)</span></label>
 
                       <div class="col-sm-9">
-                        <input type="text" class="form-control" name="addressLine2" id="addressLine2Label" placeholder="Your address" aria-label="Your address">
+                        <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
 
-                        <!-- Container For Input Field -->
-                        <div id="addAddressFieldContainer"></div>
-
-                        <a href="javascript:;" class="js-create-field form-link btn btn-sm btn-no-focus btn-ghost-primary">
-                          <i class="tio-add"></i> Add address
-                        </a>
+                        @error('password')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                                
                       </div>
                     </div>
                     <!-- End Form Group -->
+
+                   
 
                     <!-- Form Group -->
                     <div class="row">
                       <label for="zipCodeLabel" class="col-sm-3 col-form-label input-label">Zip code <i class="tio-help-outlined text-body ml-1" data-toggle="tooltip" data-placement="top" title="You can find your code in a postal address."></i></label>
 
                       <div class="col-sm-9">
-                        <input type="text" class="js-masked-input form-control" name="zipCode" id="zipCodeLabel" placeholder="Your zip code" aria-label="Your zip code"
-                               data-hs-mask-options='{
-                                 "template": "AA0 0AA"
-                               }'>
+                      <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
                       </div>
                     </div>
                     <!-- End Form Group -->

@@ -1109,7 +1109,7 @@
                                   "mode": "image",
                                   "targetAttr": "src",
                                   "resetTarget": ".js-file-attach-reset-img",
-                                  "resetImg": "./{{ asset('img/160x160/img1.jpg') }}"
+                                  "resetImg": "./{{ asset("img/160x160/img1.jpg") }}"
                                }'>
 
                         <span class="avatar-uploader-trigger">

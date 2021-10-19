@@ -23,7 +23,7 @@ use function PHPUnit\Framework\returnSelf;
 |
 */
 
-Route::get('/', function () {
+Route::name('h')->get('/', function () {
     return view('welcom2');
 });
 
@@ -57,8 +57,9 @@ Route::name('consultation_path')->post('consultation', function (ContactRequest 
     $message->save();
     $mailable =new ContactMessageCreated($message);
     Mail::to(config('cabinetVL.admin_support_email'))->send($mailable);
-    Flashy('Nous vous repondrons dans le plus bref delais!');
-    return Redirect::route('home');
+    $messageFlashy='Nous vous repondrons dans le plus bref delais!';
+    Flashy($message='nous vous repondrons sous peu',$link='google.com');
+    return Redirect::route('h');
 });
 
 
